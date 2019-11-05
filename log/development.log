@@ -1,0 +1,4 @@
+  [1m[35m (454.4ms)[0m  [1m[35mCREATE DATABASE "Phlickr_development" ENCODING = 'unicode'[0m
+  ↳ /Users/nrein/.rvm/gems/ruby-2.5.1/gems/rake-12.3.3/lib/rake/task.rb:273
+  [1m[35m (290.2ms)[0m  [1m[35mCREATE DATABASE "Phlickr_test" ENCODING = 'unicode'[0m
+  ↳ /Users/nrein/.rvm/gems/ruby-2.5.1/gems/rake-12.3.3/lib/rake/task.rb:273
