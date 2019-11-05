@@ -7,12 +7,16 @@ class SessionForm extends React.Component {
         this.state = {
             email: "",
             password: "",
-            age: null,
+            age: 14,
             first_name: "",
             last_name: ""
         }
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentWillUnmount() {
+        this.props.clearErrors();
     }
 
     handleInput(type) {
@@ -29,6 +33,8 @@ class SessionForm extends React.Component {
     }
 
     render() {
+        const errorList = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>)
+
         const display = this.props.bool ? (
             <form>
                 <label>Email:
@@ -65,6 +71,8 @@ class SessionForm extends React.Component {
                             onChange={this.handleInput("age")}
                     />
                 </label>
+                <br/>
+                <br/>
                 <label>Email:
                     <input type="text"
                             value={this.state.email}
@@ -86,8 +94,7 @@ class SessionForm extends React.Component {
                 <h2>{this.props.formHeader}</h2>
                 {display}
                 <Link to={this.props.otherFormUrl}><h3>{this.props.otherForm}</h3></Link>
-                <h4>Errors</h4>
-                <h4>{Array.from(this.props.errors)}</h4>
+                {errorList}
             </div>
         )
     }
