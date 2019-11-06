@@ -1,32 +1,53 @@
+.greeting-container {
+    width: 300px;
+    height: 33px;
+}
+
 .redirect-userlog {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    width: 300px;
+    height: 33px;
 }
 
 .relog {
-    
-}
-
-.resign {
-    background-color: white;
-    height: 50px;
-    // turn this into a button not a div that wraps the link!
+    height: 20px;
+    width: 100px;
+    margin-top: -2px;
+    margin-left: 32px;
+    text-align: right;
 }
 
 .logbtn {
     color: white;
     text-decoration: none;
     font-family: sans-serif;
+    font-size: 15.3px;
+    font-weight: 500;
+}
+
+.resign {
+    height: 33px;
+    width: 100px;
+    margin-right: 46px;
+    margin-top: -2px;
 }
 
 .signbtn {
-    color: black;
-    background-color: white;
+    padding-top: 7.5px;
+    padding-bottom: 7.8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000;
     text-decoration: none;
+    background-color: white;
     font-family: sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 2px;
-    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.signbtn:hover {
+    cursor: pointer;
+    color: lightgrey;
 }

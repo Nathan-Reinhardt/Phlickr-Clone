@@ -11,12 +11,12 @@
 .right-nav {
     margin-top: 25px;
     margin-right: 25px;
-    width: 150px;
+    width: 250px;
 }
 
 .left-nav {
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 .site-title {
@@ -31,10 +31,29 @@
     cursor: pointer;
 }
 
-.text-box {
+.search-box-container {  // remember to adjust size with new i tag
+    height: 33px;        // and to keep adjusting the bellow content
+    width: 1500px;
+    margin-left: 15px;
+}
+
+.search-text-box {
     margin-top: 15px;
     background-color: white;
-    height: 25px;
-    width: 300px;
+    height: 28px;
+    width: 60%;
     font-family: sans-serif;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.magsearch {
+    background-color: white;
+    height: 33px;
+    width: 50px;
+    margin-top: 16px;
+}
+
+.magsearch:hover {
+    cursor: pointer;
 }

@@ -11,7 +11,10 @@ const App = () => (
       <nav className="left-nav">
         <Link className="site-title" to="/">phlickr</Link>
       </nav>
-      <textarea className="text-box">Your text here</textarea>
+      <div className="search-box-container">
+        <label className="magsearch">H</label>
+        <input className="search-text-box" type="text" value=""/>
+      </div>
       <nav className="right-nav">
         <GreetingContainer />
       </nav>
