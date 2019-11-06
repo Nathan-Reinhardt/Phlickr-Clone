@@ -1,0 +1,40 @@
+.main-nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: auto;
+    height: 64px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.right-nav {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 150px;
+}
+
+.left-nav {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.site-title {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.site-title:hover {
+    cursor: pointer;
+}
+
+.text-box {
+    margin-top: 15px;
+    background-color: white;
+    height: 25px;
+    width: 300px;
+    font-family: sans-serif;
+}

@@ -8,15 +8,18 @@ const GreetingContainer = (props) => {
             <button onClick={() => props.logout()}>Log Out</button>
         </div>
     ) : (
-        <div>
-            <Link className="btn" to="/signup">Sign Up</Link>
-            <br/>
-            <Link className="btn" to="/login">Log In</Link>
+        <div className="redirect-userlog">
+            <div className="relog">
+                <Link className="logbtn" to="/login">Log In</Link>
+            </div>
+            <div className="resign">
+                <Link className="signbtn" to="/signup">Sign Up</Link>
+            </div>
         </div>
     );
 
     return (
-        <div>
+        <div className="greeting-container">
             {display}
         </div>
     );

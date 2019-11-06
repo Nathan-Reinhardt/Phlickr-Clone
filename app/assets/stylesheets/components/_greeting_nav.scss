@@ -1,0 +1,32 @@
+.redirect-userlog {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.relog {
+    
+}
+
+.resign {
+    background-color: white;
+    height: 50px;
+    // turn this into a button not a div that wraps the link!
+}
+
+.logbtn {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.signbtn {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 2px;
+    height: 50px;
+}

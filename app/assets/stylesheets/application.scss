@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@import "base/reset.scss";
+// CSS Reset
+
+@import "base/layout.scss";
+@import "base/fonts.scss";
+// Core
+
+@import "components/*";
+// Components
