@@ -1,3 +1,5 @@
+// Whole nav
+
 .main-nav {
     display: flex;
     position: relative;
@@ -31,29 +33,58 @@
     cursor: pointer;
 }
 
-.search-box-container {  // remember to adjust size with new i tag
-    height: 33px;        // and to keep adjusting the bellow content
-    width: 1500px;
-    margin-left: 15px;
+// Textbox
+
+.search-box-container {
+    display: flex;
+    height: 33px;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.search-box-container:focus > .search-text-box{
+    background-color: white;
+    opacity: 1;
+    outline: none;
 }
 
 .search-text-box {
-    margin-top: 15px;
+    margin-top: 16px;
     background-color: white;
-    height: 28px;
-    width: 60%;
+    opacity: 0.7;
+    height: 31px;
+    width: 90.8%;
+    font-size: 13px;
     font-family: sans-serif;
+    border: none;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    transition: 0.5s;
 }
 
-.magsearch {
+.search-text-box:focus {
     background-color: white;
-    height: 33px;
-    width: 50px;
-    margin-top: 16px;
+    opacity: 1;
+    outline: none;
 }
 
-.magsearch:hover {
+.mag-search {
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    height: 29px;
+    width: 42px;
+    margin-top: 16px;
+    margin-left: 2px;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-right: 8px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: 0.5s;
+}
+
+.mag-search:hover {
     cursor: pointer;
+    opacity: 1;
 }
