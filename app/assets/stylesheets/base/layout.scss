@@ -1,5 +1,11 @@
-body {
-	margin: 0px;
-	background-color: lightblue;
-	// background-image: url("https://unsplash.com/photos/_LuLiJc1cdo");
+html, body {
+	// background-color: skyblue;
+}
+
+.back-ground {
+	background-image: image-url('splashnouser.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
