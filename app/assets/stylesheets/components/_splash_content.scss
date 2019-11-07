@@ -39,8 +39,8 @@
 .signbtn-splash {
     padding-top: 20px;
     padding-bottom: 19px;
-    padding-left: 58px;
-    padding-right: 58px;
+    padding-left: 58.3px;
+    padding-right: 58.3px;
     color: #000;
     text-decoration: none;
     background-color: white;
@@ -60,16 +60,14 @@
     margin-left: 200px;
     margin-top: 50px;
     padding-left: 373px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 // Splash Footer
 
-// .splash-footer {
-    
-// }
-
-.dot {
+.splash-footer {
     color: black;
     background-color: black;
+    width: 100%;
+    padding-bottom: 15px;
 }

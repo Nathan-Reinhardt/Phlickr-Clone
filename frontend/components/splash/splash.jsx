@@ -19,6 +19,7 @@ const Splash = () => {
                     <button className="signbtn-splash">Demo</button>
                 </div>
             </div>
+            <h1 className="splash-footer">.</h1>
         </div>
     );
 };
