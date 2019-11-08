@@ -2,10 +2,17 @@ html, body {
 	// background-color: skyblue;
 }
 
-.back-ground {
-	background-image: image-url('splashnouser.jpg');
+.back-ground, .back-ground-session {
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.back-ground {
+	background-image: image-url('splashnouser.jpg');
+}
+
+.back-ground-session {
+	background-image: image-url('shawnang.jpg');
 }

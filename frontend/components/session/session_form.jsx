@@ -36,67 +36,72 @@ class SessionForm extends React.Component {
         const errorList = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>)
 
         const display = this.props.bool ? (
-            <form className="log-in-form">
-                <label>Log in to Phlickr</label>
-                <br/>
-                <input type="text"
-                    placeholder="Email address"
-                    value={this.state.email}
-                    onChange={this.handleInput("email")}
-                />
-                <br/>
-                <input type="password"
-                    placeholder="Password"
-                    value={this.state.password}
-                    onChange={this.handleInput("password")}
-                />
-                <br/>
-                <button onClick={this.handleSubmit}>Sign in</button>
-                <Link to={this.props.otherFormUrl}><h3>{this.props.otherForm}</h3></Link>
-            </form>
+            <div className="log-in-container">
+                <form className="log-in-form">
+                    <label className="log-label">Log in to Phlickr</label>
+                    <br/>
+                    <input type="text"
+                        placeholder="Email address"
+                        value={this.state.email}
+                        onChange={this.handleInput("email")}
+                    />
+                    <br/>
+                    <input type="password"
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.handleInput("password")}
+                    />
+                    <br/>
+                    <button onClick={this.handleSubmit}>Sign in</button>
+                    <Link to={this.props.otherFormUrl}><h3>{this.props.otherForm}</h3></Link>
+                </form>
+            </div>
         ) : (
-            <form className="sign-up-form">
-                <label>Sign up for Phlickr</label>
-                <br/>
-                <input type="text"
-                    placeholder="First name"
-                    value={this.state.first_name}
-                    onChange={this.handleInput("first_name")}
-                />
-                <br/>
-                <input type="text"
-                    placeholder="Last name"
-                    value={this.state.last_name}
-                    onChange={this.handleInput("last_name")}
-                />
-                <br/>
-                <input type="number"
-                    placeholder="Your age"
-                    value={this.state.age}
-                    onChange={this.handleInput("age")}
-                />
-                <br/>
-                <input type="text"
-                    placeholder="Email address"
-                    value={this.state.email}
-                    onChange={this.handleInput("email")}
-                />
-                <br/>
-                <input type="password"
-                    placeholder="Password"
-                    value={this.state.password}
-                    onChange={this.handleInput("password")}
-                />
-                <br/>
-                <button onClick={this.handleSubmit}>{this.props.formType}</button>
-                <Link to={this.props.otherFormUrl}><h3>{this.props.otherForm}</h3></Link>
-            </form>
+            <div className="sign-up-container">
+                <label className="sign-label">Sign up for Phlickr</label>
+                <form className="sign-up-form">
+                    <br/>
+                    <input type="text"
+                        placeholder="First name"
+                        value={this.state.first_name}
+                        onChange={this.handleInput("first_name")}
+                    />
+                    <br/>
+                    <input type="text"
+                        placeholder="Last name"
+                        value={this.state.last_name}
+                        onChange={this.handleInput("last_name")}
+                    />
+                    <br/>
+                    <input type="number"
+                        placeholder="Your age"
+                        value={this.state.age}
+                        onChange={this.handleInput("age")}
+                    />
+                    <br/>
+                    <input type="text"
+                        placeholder="Email address"
+                        value={this.state.email}
+                        onChange={this.handleInput("email")}
+                    />
+                    <br/>
+                    <input type="password"
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.handleInput("password")}
+                    />
+                    <br/>
+                    <button onClick={this.handleSubmit}>{this.props.formType}</button>
+                    <Link to={this.props.otherFormUrl}><h3>{this.props.otherForm}</h3></Link>
+                </form>
+            </div>
         );
 
         return (
-            <div className="session-form-container">
-                {display}
-                {errorList}
+            <div className="back-ground-session">
+                <div className="session-form-container">
+                    {display}
+                </div>
             </div>
         )
     }

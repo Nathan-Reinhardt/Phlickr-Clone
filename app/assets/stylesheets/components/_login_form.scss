@@ -1,1 +1,22 @@
 // Login Form
+
+.log-in-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 500px;
+    width: 500px;
+}
+
+.log-in-form {
+    background-color: white;
+    margin-top: -30px;
+    margin-right: 65px;
+    padding: 24px;
+    height: 377px;
+    width: 272px;
+    border-radius: 5px;
+}
+
+// go back to session form and start adding more class names

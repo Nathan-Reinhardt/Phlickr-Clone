@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./navbar/navbar";
 import Splash from "./splash/splash";
+import LogoDetailBar from "./navbar/logo_bar";
 import SignupFormContainer from "./session/signup_form_container";
 import LoginFormContainer from "./session/login_form_container";
 import { AuthRoute } from "../util/route_util";
@@ -12,8 +13,12 @@ const App = () => (
       <Route exact={true} path="/" component={NavBar} />
       <Route exact={true} path="/" component={Splash} />
     </div>
-    <AuthRoute path="/login" component={LoginFormContainer} />
-    <AuthRoute path="/signup" component={SignupFormContainer} />
+    <div>
+      <Route exact={true} path="/login" component={LogoDetailBar}/>
+      <Route exact={true} path="/signup" component={LogoDetailBar}/>
+      <AuthRoute path="/login" component={LoginFormContainer} />
+      <AuthRoute path="/signup" component={SignupFormContainer} />
+    </div>
   </div>
 );
 
