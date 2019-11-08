@@ -19,4 +19,56 @@
     border-radius: 5px;
 }
 
-// go back to session form and start adding more class names
+.log-label {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 71px;
+}
+
+.form-l-btn {
+    margin-top: 50px;
+    width: 272px;
+    height: 40px;
+    background-color: rgb(49, 144, 220);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+}
+
+.form-l-btn:hover {
+    cursor: pointer;
+    background-color: rgb(45, 148, 233);
+}
+
+.forgot-password {
+    color: rgb(57, 128, 187);
+    font-size: 13px;
+    margin-top: 17px;
+    margin-left: 82px;
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+}
+
+.form-line {
+    height: 1px;
+    width: 272px;
+    margin-top: 18px;
+    background-color: rgb(230, 230, 230);
+}
+
+.form-bottom-container {
+    display: flex;
+}
+
+.not-member {
+
+}
+
+.to-sign-up {
+    text-decoration: none;
+}
+
+// after lunch finish this file

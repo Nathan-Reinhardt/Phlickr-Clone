@@ -13,7 +13,7 @@ const App = () => (
       <Route exact={true} path="/" component={NavBar} />
       <Route exact={true} path="/" component={Splash} />
     </div>
-    <div>
+    <div className="back-ground-session">
       <Route exact={true} path="/login" component={LogoDetailBar}/>
       <Route exact={true} path="/signup" component={LogoDetailBar}/>
       <AuthRoute path="/login" component={LoginFormContainer} />

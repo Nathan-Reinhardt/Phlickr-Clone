@@ -8,3 +8,4 @@
 
 User.destroy_all
 User.create!(id: 1, first_name: "Nathan", last_name: "Reinhardt", age: 22, email: "nrein@gmail.com", password: "password")
+User.create!(id: 2, first_name: "Lawrence", last_name: "Fields", age: 18, email: "demo@demo.com", password: "password")
