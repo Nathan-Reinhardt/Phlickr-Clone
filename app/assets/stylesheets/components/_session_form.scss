@@ -35,14 +35,44 @@
     padding: 32px;
 }
 
+.log-in-container, .sign-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.log-in-form, .sign-up-form {
+    background-color: white;
+    margin-right: 65px;
+    padding: 24px;
+    border-radius: 5px;
+}
+
+.log-label, .sign-label {
+    font-size: 19px;
+}
+
+.form-l-btn, .form-s-btn {
+    width: 272px;
+    height: 40px;
+    background-color: rgb(49, 144, 220);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+}
+
 // Session input
 
-.session-input, .session-input-password {
-    width: 270px;
-    height: 55px;
+.session-input, .session-input-password, .session-input-s,
+.session-input-t, .session-input-u, .session-input-v, .session-input-w {
+    width: 255px;
     border: 1px solid rgb(137, 137, 137);
     margin-bottom: 8px;
     border-radius: 4px;
+    font-size: 15px;
+    padding-left: 15px;
 }
 
 .session-input {
@@ -53,7 +83,11 @@
     height: 54px;
 }
 
-.session-input:focus, .session-input-password:focus {
+.session-input-s {
+    height: 54px;
+}
+
+.session-input:focus, .session-input-password:focus, .session-input-s:focus {
     border: 1px solid rgb(49, 144, 220);
 }
 

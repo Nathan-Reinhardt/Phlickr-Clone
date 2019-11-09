@@ -13,6 +13,17 @@ class SessionForm extends React.Component {
         }
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.demoUser = this.demoUser.bind(this);
+    }
+
+    demoUser(e) {
+        e.preventDefault();
+        const demo = {
+            email: "demo@demo.com",
+            password: "password"
+        }
+        this.props.demoUser(demo)
+            .then( () => this.props.history.push[`/`]);
     }
 
     componentWillUnmount() {
@@ -64,6 +75,12 @@ class SessionForm extends React.Component {
                         <h3 className="not-member">Not a Phlickr member?</h3>
                         <Link className="to-sign-up" to={this.props.otherFormUrl}><h3>Sign up here.</h3></Link>
                     </div>
+                    <div className="help-container">
+                        <h3 className="h-english">English</h3>
+                        <h3 className="h-help">Help</h3>
+                        <h3 className="h-privacy">Privacy</h3>
+                        <h3 className="h-terms">Terms</h3>
+                    </div>
                 </form>
             </div>
         ) : (
@@ -73,40 +90,56 @@ class SessionForm extends React.Component {
                         <h1 className="blue-ball">.</h1>
                         <h1 className="pink-ball">.</h1>
                     </div>
-                    <label className="sign-label">Sign up for Phlickr</label>
+                    <h1 className="sign-label">Sign up for Phlickr</h1>
                     <br/>
-                    <input className="session-input" type="text"
+                    <input className="session-input-s" type="text"
                         placeholder="First name"
                         value={this.state.first_name}
                         onChange={this.handleInput("first_name")}
                     />
                     <br/>
-                    <input className="session-input" type="text"
+                    <input className="session-input-s" type="text"
                         placeholder="Last name"
                         value={this.state.last_name}
                         onChange={this.handleInput("last_name")}
                     />
                     <br/>
-                    <input className="session-input" type="number"
+                    <input className="session-input-s" type="number"
                         placeholder="Your age"
                         value={this.state.age}
                         onChange={this.handleInput("age")}
                     />
                     <br/>
-                    <input className="session-input" type="text"
+                    <input className="session-input-s" type="text"
                         placeholder="Email address"
                         value={this.state.email}
                         onChange={this.handleInput("email")}
                     />
                     <br/>
-                    <input className="session-input" type="password"
+                    <input className="session-input-s" type="password"
                         placeholder="Password"
                         value={this.state.password}
                         onChange={this.handleInput("password")}
                     />
                     <br/>
-                    <button className="form-s-btn" onClick={this.handleSubmit}>{this.props.formType}</button>
-                    <Link to={this.props.otherFormUrl}><h3>{this.props.otherForm}</h3></Link>
+                    <button className="form-s-btn" onClick={this.handleSubmit}>Sign up</button>
+                    <h3 className="form-condition">By signing up, you agree with Phlickr's</h3>
+                    <div className="condition-container">
+                        <h3 className="terms-service">Terms of Service</h3>
+                        <h3 className="and">and</h3>
+                        <h3 className="priv-pol">Privacy Policy</h3>
+                    </div>
+                    <div className="form-line"></div>
+                    <div className="form-bottom-container">
+                        <h3 className="already-member">Already a Phlickr member?</h3>
+                        <Link className="to-log-in" to={this.props.otherFormUrl}><h3>Log in here.</h3></Link>
+                    </div>
+                    <div className="help-container">
+                        <h3 className="h-english">English</h3>
+                        <h3 className="h-help">Help</h3>
+                        <h3 className="h-privacy">Privacy</h3>
+                        <h3 className="h-terms">Terms</h3>
+                    </div>
                 </form>
             </div>
         );

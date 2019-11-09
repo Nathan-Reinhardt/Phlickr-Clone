@@ -1,39 +1,43 @@
 // Login Form
 
 .log-in-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
     height: 500px;
     width: 500px;
 }
 
 .log-in-form {
     background-color: white;
-    margin-top: -30px;
+    margin-top: -25px;
     margin-right: 65px;
     padding: 24px;
-    height: 377px;
+    height: 390px;
     width: 272px;
     border-radius: 5px;
 }
 
+// Error Popup Content
+
+.errors {
+    background-color: rgb(249, 216, 220);
+    border-radius: 3px;
+    font-weight: normal;
+    font-size: 15.3px;
+    margin-top: 20px;
+    margin-bottom: -2px;
+    padding-left: 48px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+// Form Content
+
 .log-label {
-    font-size: 18px;
-    margin-top: 15px;
+    margin-top: 18px;
     margin-left: 71px;
 }
 
 .form-l-btn {
-    margin-top: 50px;
-    width: 272px;
-    height: 40px;
-    background-color: rgb(49, 144, 220);
-    font-size: 15px;
-    font-weight: 600;
-    color: white;
-    border-radius: 3px;
+    margin-top: 10px;
 }
 
 .form-l-btn:hover {
@@ -41,8 +45,11 @@
     background-color: rgb(45, 148, 233);
 }
 
-.forgot-password {
+.forgot-password, .to-sign-up {
     color: rgb(57, 128, 187);
+}
+
+.forgot-password {
     font-size: 13px;
     margin-top: 17px;
     margin-left: 82px;
@@ -61,14 +68,46 @@
 
 .form-bottom-container {
     display: flex;
+    margin-top: 4px;
+    margin-left: 28px;
+}
+
+.not-member, .to-sign-up {
+    font-weight: lighter;
 }
 
 .not-member {
-
+    font-size: 13px;
 }
 
 .to-sign-up {
     text-decoration: none;
+    font-size: 11px;
+    padding-left: 4px;
 }
 
-// after lunch finish this file
+// help below form
+
+.help-container {
+    display: flex;
+    width: 272px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.h-english, .h-help, .h-privacy, .h-terms {
+    font-size: 15.5px;
+    font-weight: normal;
+}
+
+.h-help {
+    margin-left: 100px;
+}
+
+.h-privacy, .h-terms {
+    margin-left: 18px;
+}
+
+.h-english:hover, .h-help:hover, .h-privacy:hover, .h-terms:hover {
+    cursor: pointer;
+}

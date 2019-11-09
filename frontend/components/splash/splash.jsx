@@ -1,7 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Splash = () => {
+const Splash = (props) => {
+
+    const demouser = (e) => {
+        e.preventDefault();
+        const demo = {
+            email: "demo@demo.com",
+            password: "password"
+        }
+        props.demoUser(demo)
+            .then( () => props.history.push[`/`]);
+    }
+
     return (
         <div className="splash-content">
             <div className="inspiration-content">
@@ -16,7 +27,7 @@ const Splash = () => {
                     <Link className="signbtn-splash" to="/signup">Sign Up</Link>
                 </div>
                 <div className="demo-container">
-                    <button className="signbtn-splash">Demo</button>
+                    <button className="signbtn-splash" onClick={demouser}>Demo</button>
                 </div>
             </div>
             <h1 className="splash-footer">.</h1>
