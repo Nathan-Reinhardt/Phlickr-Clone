@@ -69,6 +69,7 @@ class SessionForm extends React.Component {
                     />
                     <br/>
                     <button className="form-l-btn" onClick={this.handleSubmit}>Sign in</button>
+                    <button className="log-demo" onClick={this.demoUser}>Demo</button>
                     <h3 className="forgot-password">Forgot password?</h3>
                     <div className="form-line"></div>
                     <div className="form-bottom-container">
@@ -123,9 +124,10 @@ class SessionForm extends React.Component {
                     />
                     <br/>
                     <button className="form-s-btn" onClick={this.handleSubmit}>Sign up</button>
+                    <button className="log-demo" onClick={this.demoUser}>Demo</button>
                     <h3 className="form-condition">By signing up, you agree with Phlickr's</h3>
                     <div className="condition-container">
-                        <h3 className="terms-service">Terms of Service</h3>
+                        <h3 className="terms-service">Terms of Services</h3>
                         <h3 className="and">and</h3>
                         <h3 className="priv-pol">Privacy Policy</h3>
                     </div>

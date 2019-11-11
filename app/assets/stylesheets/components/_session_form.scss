@@ -16,6 +16,16 @@
     padding-left: 95px;
 }
 
+.logged-detail {
+    display: flex;
+}
+
+.greet-logout {
+    margin-top: 6px;
+    margin-left: 500px;
+    padding-left: 350px;
+}
+
 .detail-title {
     color: white;
     font-size: 29px;
@@ -49,11 +59,7 @@
     border-radius: 5px;
 }
 
-.log-label, .sign-label {
-    font-size: 19px;
-}
-
-.form-l-btn, .form-s-btn {
+.form-l-btn, .form-s-btn, .log-demo {
     width: 272px;
     height: 40px;
     background-color: rgb(49, 144, 220);
@@ -61,6 +67,18 @@
     font-weight: 600;
     color: white;
     border-radius: 3px;
+}
+
+// Demo Button
+
+.log-demo {
+    margin-top: 10px;
+    background-color: black;
+}
+
+.log-demo:hover {
+    cursor: pointer;
+    background-color: rgb(32, 33, 35);
 }
 
 // Session input

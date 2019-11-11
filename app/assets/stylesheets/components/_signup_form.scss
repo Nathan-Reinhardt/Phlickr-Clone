@@ -3,29 +3,79 @@
 .sign-up-container {
     height: 620px;
     width: 500px;
+    margin-top: 29px;
 }
 
 .sign-up-form {
     margin-top: -36px;
-    height: 563px;
+    height: 590px;
     width: 272px;
 }
 
 // Form content
 
 .sign-label {
+    font-size: 18.5px;
     margin-top: 18px;
     margin-left: 62px;
 }
 
 .form-s-btn {
-    margin-top: 32px;
+    margin-top: 5px;
 }
 
 .form-condition {
-    color: rgb(159, 159, 159);
-    font-size: 11px;
+    padding-top: 5px;
+    margin-left: 40px;
+    color: rgb(137, 137, 137);
+    font-size: 11.5px;
     font-weight: normal;
 }
 
-//continue
+.condition-container {
+    display: flex;
+    margin-top: -22px;
+    margin-left: 40px;
+    margin-bottom: -13px;
+}
+
+.terms-service, .and, .priv-pol {
+    font-size: 11.5px;
+    font-weight: normal;
+    color: rgb(55, 122, 177);
+}
+
+.terms-service, .priv-pol, .to-log-in {
+    cursor: pointer;
+}
+
+.terms-service {
+    margin-right: 4px;
+}
+
+.and {
+    color: rgb(137, 137, 137);
+}
+
+.priv-pol {
+    margin-left: 4px;
+}
+
+.form-bottom-container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.already-member {
+    font-weight: normal;
+    color: rgb(32, 33, 35);
+    font-size: 13px;
+}
+
+.to-log-in {
+    padding-left: 3px;
+    padding-top: 0.5px;
+    text-decoration: none;
+    font-size: 11px;
+    color: rgb(62, 141, 206);
+}

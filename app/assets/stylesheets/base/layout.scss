@@ -1,8 +1,8 @@
-html, body {
-	// background-color: skyblue;
-}
+// html, body {
+// 	background-color: skyblue;
+// }
 
-.back-ground, .back-ground-session {
+.back-ground, .logged-back-ground, .back-ground-session {
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -11,6 +11,13 @@ html, body {
 
 .back-ground {
 	background-image: image-url('splashnouser.jpg');
+}
+
+.logged-back-ground {
+	background-image: image-url('freeland.jpg');
+	// get rid of these later after adding content to page
+	height: 705px;
+	width: 1450px;
 }
 
 .back-ground-session {
