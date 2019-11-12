@@ -5,7 +5,7 @@ const GreetingContainer = (props) => {
 
     const display = props.currentUser ? (
         <div className="welcome-container">
-            <p className="welcome-message">Hello, {props.currentUser.first_name}, {props.currentUser.last_name}</p>
+            <p className="welcome-message">Hello, {props.currentUser.first_name} {props.currentUser.last_name}</p>
             <button className="signbtn" onClick={() => props.logout()}>Log Out</button>
         </div>
     ) : (

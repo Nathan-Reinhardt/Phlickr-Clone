@@ -20,6 +20,8 @@ class User < ApplicationRecord
     validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
     after_initialize :ensure_session_token
 
+    has_many :photos
+
     def ensure_session_token 
         self.session_token ||= SecureRandom.urlsafe_base64(16)
     end

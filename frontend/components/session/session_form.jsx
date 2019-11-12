@@ -9,7 +9,12 @@ class SessionForm extends React.Component {
             password: "",
             age: "",
             first_name: "",
-            last_name: ""
+            last_name: "",
+            error1: "",
+            error2: "",
+            error3: "",
+            error4: "",
+            error5: ""
         }
         this.handleInput = this.handleInput.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -40,12 +45,66 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
-            .then( () => this.props.history.push[`/`]);
+            .then( () => this.props.history.push[`/`])
+            .fail( () => {
+                // let stateKeys = Object.keys(this.state);
+                // let errorKeys = stateKeys.slice(5);
+                // let currentError = errorKeys[0];
+                // console.log(this.state);
+                const reduceErrors = this.props.errors;
+                let truthy = true;
+
+                if (this.state.first_name === "") {
+                    this.setState( { error1: "first name can't be blank" })
+                }
+                if (this.state.first_name !== "") {
+                    this.setState( { error1: "" })
+                }
+
+                if (this.state.last_name === "") {
+                    this.setState( { error2: "last name can't be blank" })
+                }
+                if (this.state.last_name !== "") {
+                    this.setState( { error2: "" })
+                }
+
+                if (this.state.age === "") {
+                    this.setState( { error3: "age can't be blank" })
+                }
+                if (this.state.age !== "") {
+                    this.setState( { error3: "" })
+                }
+
+                if (this.state.email === "") {
+                    this.setState( { error4: "email can't be blank" })
+                    truthy = false;
+                }
+                for (let i = 0; i < reduceErrors.length; i++) {
+                    if (reduceErrors[i] === "Email has already been taken") {
+                        this.setState( { error4: "email has already been taken" })
+                        truthy = false;
+                    }
+                }
+                if (this.state.email !== "" && truthy) {
+                    this.setState( { error4: "" })
+                }
+
+                if (this.state.password === "") {
+                    this.setState( { error5: "password can't be blank" })
+                }
+                else if (this.state.password.length < 6) {
+                    this.setState( { error5: "minimum of 6 characters needed" })
+                }
+                if (this.state.password.length > 6) {
+                    this.setState( { error5: "" })
+                }
+                // console.log(this.state);
+            });
     }
 
     render() {
         const errorList = this.props.errors.map((error, idx) => <li className="errors" key={idx}>{error}</li>)
-
+        
         const display = this.props.bool ? (
             <div className="log-in-container">
                 <form className="log-in-form">
@@ -98,31 +157,31 @@ class SessionForm extends React.Component {
                         value={this.state.first_name}
                         onChange={this.handleInput("first_name")}
                     />
-                    <br/>
+                    <li className="first-name-err">{this.state.error1}</li>
                     <input className="session-input-s" type="text"
                         placeholder="Last name"
                         value={this.state.last_name}
                         onChange={this.handleInput("last_name")}
                     />
-                    <br/>
+                    <li className="last-name-err">{this.state.error2}</li>
                     <input className="session-input-s" type="number"
                         placeholder="Your age"
                         value={this.state.age}
                         onChange={this.handleInput("age")}
                     />
-                    <br/>
+                    <li className="age-err">{this.state.error3}</li>
                     <input className="session-input-s" type="text"
                         placeholder="Email address"
                         value={this.state.email}
                         onChange={this.handleInput("email")}
                     />
-                    <br/>
+                    <li className="email-err">{this.state.error4}</li>
                     <input className="session-input-s" type="password"
                         placeholder="Password"
                         value={this.state.password}
                         onChange={this.handleInput("password")}
                     />
-                    <br/>
+                    <li className="password-err">{this.state.error5}</li>
                     <button className="form-s-btn" onClick={this.handleSubmit}>Sign up</button>
                     <button className="log-demo" onClick={this.demoUser}>Demo</button>
                     <h3 className="form-condition">By signing up, you agree with Phlickr's</h3>
@@ -147,8 +206,10 @@ class SessionForm extends React.Component {
         );
 
         return (
-            <div className="session-form-container">
-                {display}
+            <div className="back-ground-session">
+                <div className="session-form-container">
+                    {display}
+                </div>
             </div>
         )
     }

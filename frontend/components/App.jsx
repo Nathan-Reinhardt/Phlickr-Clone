@@ -9,12 +9,10 @@ import { Route } from "react-router";
 const App = () => (
   <div className="app-container">
     <Route exact={true} path="/" component={SplashContainer} />
-    <div className="back-ground-session">
-      <AuthRoute path="/login" component={LogoDetailBar}/>
-      <AuthRoute path="/signup" component={LogoDetailBar}/>
-      <AuthRoute path="/login" component={LoginFormContainer} />
-      <AuthRoute path="/signup" component={SignupFormContainer} />
-    </div>
+    <AuthRoute path="/login" component={LogoDetailBar}/>
+    <AuthRoute path="/signup" component={LogoDetailBar}/>
+    <AuthRoute path="/login" component={LoginFormContainer} />
+    <AuthRoute path="/signup" component={SignupFormContainer} />
   </div>
 );
 
