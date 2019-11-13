@@ -52,7 +52,8 @@ class SessionForm extends React.Component {
                 // let currentError = errorKeys[0];
                 // console.log(this.state);
                 const reduceErrors = this.props.errors;
-                let truthy = true;
+                let ageTruthy = true;
+                let emailTruthy = true;
 
                 if (this.state.first_name === "") {
                     this.setState( { error1: "first name can't be blank" })
@@ -70,22 +71,27 @@ class SessionForm extends React.Component {
 
                 if (this.state.age === "") {
                     this.setState( { error3: "age can't be blank" })
+                    ageTruthy = false;
                 }
-                if (this.state.age !== "") {
+                if (this.state.age < 14) {
+                    this.setState( { error3: "have to be 14 or older to sign up" })
+                    ageTruthy = false;
+                }
+                if (this.state.age !== "" && ageTruthy) {
                     this.setState( { error3: "" })
                 }
 
                 if (this.state.email === "") {
                     this.setState( { error4: "email can't be blank" })
-                    truthy = false;
+                    emailTruthy = false;
                 }
                 for (let i = 0; i < reduceErrors.length; i++) {
                     if (reduceErrors[i] === "Email has already been taken") {
                         this.setState( { error4: "email has already been taken" })
-                        truthy = false;
+                        emailTruthy = false;
                     }
                 }
-                if (this.state.email !== "" && truthy) {
+                if (this.state.email !== "" && emailTruthy) {
                     this.setState( { error4: "" })
                 }
 

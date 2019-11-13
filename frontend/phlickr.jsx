@@ -2,7 +2,6 @@ import React from "react";
 import ReactDom from "react-dom";
 import configureStore from "./store/store";
 import Root from "./components/root";
-import { logoutSession } from "./util/session_api_util";
 
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.getState = store.getState;
     window.dispatch = store.dispatch;
-    window.logoutSession = logoutSession;
 
     ReactDom.render(<Root store={store} />, root);
 });
