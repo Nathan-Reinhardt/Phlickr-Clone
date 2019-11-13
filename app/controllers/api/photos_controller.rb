@@ -3,7 +3,7 @@ class Api::PhotosController < ApplicationController
     def create
         @photo = Photo.new(photo_params)
         if @photo.save
-            # render @photo
+            render :show
         else
             render json: @photo.errors.full_messages, status: 422
         end
@@ -11,10 +11,11 @@ class Api::PhotosController < ApplicationController
 
     def index
         @photos = Photo.all
+        render :index
     end
 
     def show
-        @photo = Photo.find(params[:id])
+        @photo = Photo.with_attached_images.find(params[:id])
     end
 
     def edit
@@ -24,7 +25,7 @@ class Api::PhotosController < ApplicationController
     def update
         @photo = current_user.photos.find(params[:id])
         if @photo.update_attributes(photo_params)
-            #render
+            render :show
         else
             render json: @photo.errors.full_messages, status: 422
         end
@@ -33,12 +34,12 @@ class Api::PhotosController < ApplicationController
     def destroy
         photo = Photo.find(params[:id])
         photo.destroy
-        #render
+        render :index
     end
 
     private
 
     def photo_params
-        params.require(:photo).permit(:title, :description, :views, :faves_num)
+        params.require(:photo).permit(:title, :description, :views, :faves_num, images: [])
     end
 end

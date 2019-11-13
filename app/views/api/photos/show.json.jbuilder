@@ -1,0 +1,1 @@
+json.photoUrls @photo.images.map { |file| url_for(file) }
