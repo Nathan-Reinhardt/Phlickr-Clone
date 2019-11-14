@@ -71,3 +71,19 @@
     width: 100%;
     padding-bottom: 15px;
 }
+
+// Root Splash
+
+.root-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 600px;
+}
+
+.welcome-tag-site {
+    font-size: 100px;
+    color: white;
+}

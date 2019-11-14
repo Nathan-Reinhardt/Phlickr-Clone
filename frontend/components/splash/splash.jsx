@@ -18,6 +18,9 @@ const Splash = (props) => {
     const display = props.currentUser ? (
         <div className="logged-back-ground">
             <LogoDetailBarContainer />
+            <div className="root-content">
+                <h1 className="welcome-tag-site">Welcome to Phlickr!</h1>
+            </div>
         </div>
     ) : (
         <div className="back-ground">
