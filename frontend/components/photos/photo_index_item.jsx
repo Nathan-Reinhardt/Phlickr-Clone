@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 const PhotoIndexItem = props => (
     <li>
-        {props.currentUser}
+        <Link className="" to={`/photos/${props.photo.id}`}>
+            
+        </Link>
     </li>
 )
 
