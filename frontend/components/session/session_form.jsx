@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LogoDetailBarContainer from "../navbar/logo_bar_container";
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -73,7 +74,7 @@ class SessionForm extends React.Component {
                     this.setState( { error3: "age can't be blank" })
                     ageTruthy = false;
                 }
-                if (this.state.age < 14) {
+                if (this.state.age < 14 && this.state.age !== "") {
                     this.setState( { error3: "have to be 14 or older to sign up" })
                     ageTruthy = false;
                 }
@@ -163,31 +164,31 @@ class SessionForm extends React.Component {
                         value={this.state.first_name}
                         onChange={this.handleInput("first_name")}
                     />
-                    <li className="first-name-err">{this.state.error1}</li>
+                    <li className="sign-err">{this.state.error1}</li>
                     <input className="session-input-s" type="text"
                         placeholder="Last name"
                         value={this.state.last_name}
                         onChange={this.handleInput("last_name")}
                     />
-                    <li className="last-name-err">{this.state.error2}</li>
+                    <li className="sign-err">{this.state.error2}</li>
                     <input className="session-input-s" type="number"
                         placeholder="Your age"
                         value={this.state.age}
                         onChange={this.handleInput("age")}
                     />
-                    <li className="age-err">{this.state.error3}</li>
+                    <li className="sign-err">{this.state.error3}</li>
                     <input className="session-input-s" type="text"
                         placeholder="Email address"
                         value={this.state.email}
                         onChange={this.handleInput("email")}
                     />
-                    <li className="email-err">{this.state.error4}</li>
+                    <li className="sign-err">{this.state.error4}</li>
                     <input className="session-input-s" type="password"
                         placeholder="Password"
                         value={this.state.password}
                         onChange={this.handleInput("password")}
                     />
-                    <li className="password-err">{this.state.error5}</li>
+                    <li className="sign-err">{this.state.error5}</li>
                     <button className="form-s-btn" onClick={this.handleSubmit}>Sign up</button>
                     <button className="log-demo" onClick={this.demoUser}>Demo</button>
                     <h3 className="form-condition">By signing up, you agree with Phlickr's</h3>
@@ -213,6 +214,7 @@ class SessionForm extends React.Component {
 
         return (
             <div className="back-ground-session">
+                <LogoDetailBarContainer />
                 <div className="session-form-container">
                     {display}
                 </div>
