@@ -16,16 +16,7 @@
 class Photo < ApplicationRecord
     validates :title, presence: true
 
-    validate :ensure_image
-
     has_one_attached :image
-    has_many_attached :images
 
     belongs_to :user
-
-    def ensure_image
-        unless self.image.attached?
-            errors[:image] << "must be attached"
-        end
-    end
 end

@@ -15,7 +15,8 @@ class Api::PhotosController < ApplicationController
     end
 
     def show
-        @photo = Photo.with_attached_images.find(params[:id])
+        @photo = Photo.find(params[:id])
+        render :show
     end
 
     # def edit
@@ -40,6 +41,6 @@ class Api::PhotosController < ApplicationController
     private
 
     def photo_params
-        params.require(:photo).permit(:title, :description, :views, :faves_num, images: [])
+        params.require(:photo).permit(:title, :description, :views, :faves_num)
     end
 end

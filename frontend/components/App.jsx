@@ -3,6 +3,7 @@ import SplashContainer from "./splash/splash_container";
 import SignupFormContainer from "./session/signup_form_container";
 import LoginFormContainer from "./session/login_form_container";
 import PhotosIndexContainer from "./photos/photos_index_container";
+import PhotoShowContainer from "./photos/photo_show_container";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import { Route, Switch } from "react-router-dom";
 
@@ -12,7 +13,8 @@ const App = () => (
       <Route exact={true} path="/" component={SplashContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
-      <ProtectedRoute path="/photos" component={PhotosIndexContainer} />
+      <ProtectedRoute exact={true} path="/photos" component={PhotosIndexContainer} />
+      <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
     </Switch>
   </div>
 );

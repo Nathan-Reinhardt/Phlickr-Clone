@@ -41,7 +41,9 @@ const Splash = (props) => {
                         <button className="signbtn-splash" onClick={demouser}>Demo</button>
                     </div>
                 </div>
-                <h1 className="splash-footer">.</h1>
+                <h1 className="splash-footer">
+                    <a className="github" href="https://github.com/Ticonderago/Full-Stack-Project" target="_blank">Phlickr's Github</a>
+                </h1>
             </div>
         </div>
     );

@@ -1,1 +1,2 @@
-json.photoUrls @photo.images.map { |file| url_for(file) }
+json.extract! @photo, :id, :title, :description, :views, :faves_num, :user_id
+json.photoUrl url_for(@photo.image)

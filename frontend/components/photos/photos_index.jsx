@@ -1,6 +1,5 @@
 import React from 'react';
 import PhotoIndexItem from './photo_index_item';
-import { Link } from 'react-router-dom';
 import LogoDetailBarContainer from '../navbar/logo_bar_container';
 
 class PhotoIndex extends React.Component {
@@ -16,18 +15,20 @@ class PhotoIndex extends React.Component {
         // when there are no photos
 
         return (
-            <div className="logged-back-ground">
+            <div className="back-ground-photos">
                 <LogoDetailBarContainer />
-                <ul>
-                    {
-                    this.props.photos.map(photo => (
-                        <PhotoIndexItem
-                        photo={photo}
-                        key={photo.id}
-                        />
-                    ))
-                    }
-                </ul>
+                <div className="photo-holder-background">
+                    <ul className="photo-holder">
+                        {
+                        this.props.photos.map(photo => (
+                            <PhotoIndexItem
+                            photo={photo}
+                            key={photo.id}
+                            />
+                        ))
+                        }
+                    </ul>
+                </div>
             </div>
         )   // maybe add a link below ul to create a new photo
     }

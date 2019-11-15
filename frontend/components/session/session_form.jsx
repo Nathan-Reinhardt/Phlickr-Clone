@@ -48,30 +48,32 @@ class SessionForm extends React.Component {
         this.props.processForm(user)
             .then( () => this.props.history.push[`/`])
             .fail( () => {
-                // let stateKeys = Object.keys(this.state);
-                // let errorKeys = stateKeys.slice(5);
-                // let currentError = errorKeys[0];
-                // console.log(this.state);
                 const reduceErrors = this.props.errors;
                 let ageTruthy = true;
                 let emailTruthy = true;
 
                 if (this.state.first_name === "") {
-                    this.setState( { error1: "first name can't be blank" })
+                    if (this.state.error1 === "") {
+                        this.setState( { error1: "first name can't be blank" })
+                    }
                 }
                 if (this.state.first_name !== "") {
                     this.setState( { error1: "" })
                 }
 
                 if (this.state.last_name === "") {
-                    this.setState( { error2: "last name can't be blank" })
+                    if (this.state.error2 === "") {
+                        this.setState( { error2: "last name can't be blank" })
+                    }
                 }
                 if (this.state.last_name !== "") {
                     this.setState( { error2: "" })
                 }
 
                 if (this.state.age === "") {
-                    this.setState( { error3: "age can't be blank" })
+                    if (this.state.error3 === "") {
+                        this.setState( { error3: "age can't be blank" })
+                    }
                     ageTruthy = false;
                 }
                 if (this.state.age < 14 && this.state.age !== "") {
@@ -83,7 +85,9 @@ class SessionForm extends React.Component {
                 }
 
                 if (this.state.email === "") {
-                    this.setState( { error4: "email can't be blank" })
+                    if (this.state.error4 === "") {
+                        this.setState( { error4: "email can't be blank" })
+                    }
                     emailTruthy = false;
                 }
                 for (let i = 0; i < reduceErrors.length; i++) {
@@ -97,7 +101,9 @@ class SessionForm extends React.Component {
                 }
 
                 if (this.state.password === "") {
-                    this.setState( { error5: "password can't be blank" })
+                    if (this.state.error5 === "") {
+                        this.setState( { error5: "password can't be blank" })
+                    }
                 }
                 else if (this.state.password.length < 6) {
                     this.setState( { error5: "minimum of 6 characters needed" })
@@ -105,7 +111,6 @@ class SessionForm extends React.Component {
                 if (this.state.password.length > 6) {
                     this.setState( { error5: "" })
                 }
-                // console.log(this.state);
             });
     }
 
