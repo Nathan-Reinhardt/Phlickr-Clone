@@ -1,4 +1,4 @@
-# Phlcikr
+# Phlickr
 
 [Live App](https://phlickr-clone.herokuapp.com/#/)
 
