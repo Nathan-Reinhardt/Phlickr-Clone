@@ -16,9 +16,9 @@ This project was built and designed witin a 10 day period. I do plan on adding m
 ### Screenshots
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/4B847D8F-5E06-4A23-BAC8-07F446209C54_1_105_c.jpeg"/>
 
-<img src=""/>
+<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/94848857-2580-4CE7-8BEA-5FAD4CBFC314_1_105_c.jpeg"/>
 
-<img src=""/>
+<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/C364E26D-CF4E-45A1-9CBB-4DB71F64755E_1_105_c.jpeg"/>
 
 ### Possible Future Features
 
