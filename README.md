@@ -4,7 +4,7 @@
 
 Phlickr is a photo website where users can interact with photos uploaded by other users onto the site.  The project uses Rails/PostgreSQL backend with React.js and Redux on the frontend.
 
-This project was built and designed witin a 10 day period. I do plan on adding more to the project over time.
+This project was built and designed within a 10 day period. I do plan on adding more to the project over time.
 
 ### Features
 
