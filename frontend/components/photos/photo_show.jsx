@@ -2,7 +2,7 @@ import React from 'react';
 import LogoDetailBarContainer from '../navbar/logo_bar_container';
 import { Link } from 'react-router-dom';
 
-class PostShow extends React.Component {
+class PhotoShow extends React.Component {
     componentDidMount() {
         this.props.requestPhoto(this.props.match.params.photoId);
     }
@@ -40,4 +40,4 @@ class PostShow extends React.Component {
     }
 }
 
-export default PostShow;
+export default PhotoShow;
