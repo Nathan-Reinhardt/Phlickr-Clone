@@ -2,6 +2,16 @@
 
 [Live App](https://phlickr-clone.herokuapp.com/#/)
 
+### Technologies
+
+* Javascript
+* React/Redux
+* Webpack
+* Ruby on Rails
+* PostgreSQL
+
+### About
+
 Phlickr is a photo website where users can interact with photos uploaded by other users onto the site.  The project uses Rails/PostgreSQL backend with React.js and Redux on the frontend.
 
 This project was built and designed within a 10 day period. I do plan on adding more to the project over time.
@@ -19,6 +29,12 @@ This project was built and designed within a 10 day period. I do plan on adding 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/94848857-2580-4CE7-8BEA-5FAD4CBFC314_1_105_c.jpeg"/>
 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/C364E26D-CF4E-45A1-9CBB-4DB71F64755E_1_105_c.jpeg"/>
+
+### Code
+
+Here is some of the frontend work I made for the login/signup forms
+
+<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/4AF29887-AB46-44BA-AFD0-1843E800778B.jpeg" />
 
 ### Possible Future Features
 
