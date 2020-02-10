@@ -30,7 +30,7 @@ This project was built and designed within a 10 day period. I do plan on adding 
 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/C364E26D-CF4E-45A1-9CBB-4DB71F64755E_1_105_c.jpeg"/>
 
-### Code
+### Code Snippets
 
 Here is some of the frontend work I made for the login/signup forms
 
