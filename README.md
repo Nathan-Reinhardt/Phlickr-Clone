@@ -10,12 +10,6 @@
 * Ruby on Rails
 * PostgreSQL
 
-### About
-
-Phlickr is a photo website where users can interact with photos uploaded by other users onto the site.  The project uses Rails/PostgreSQL backend with React.js and Redux on the frontend.
-
-This project was built and designed within a 10 day period. I do plan on adding more to the project over time.
-
 ### Features
 
  * Secure backend to frontend with user authentication using BCrypt.
@@ -30,7 +24,7 @@ This project was built and designed within a 10 day period. I do plan on adding 
 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/C364E26D-CF4E-45A1-9CBB-4DB71F64755E_1_105_c.jpeg"/>
 
-### Code
+### Code Snippets
 
 Here is some of the frontend work I made for the login/signup forms
 
