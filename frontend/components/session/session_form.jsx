@@ -32,6 +32,25 @@ class SessionForm extends React.Component {
             .then( () => this.props.history.push[`/`]);
     }
 
+    componentDidUpdate() {
+        if (document.getElementById("loginid") !== null) {
+            if (this.props.errors.length > 0) {
+                document.getElementById("loginid").className = "log-in-form-err";
+            }
+            else {
+                document.getElementById("loginid").className = "log-in-form";
+            }
+        }
+        else {
+            if (this.props.errors.length > 0) {
+                document.getElementById("signupid").className = "sign-up-form-err";
+            }
+            else {
+                document.getElementById("signupid").className = "sign-up-form";
+            }
+        }
+    }
+
     componentWillUnmount() {
         this.props.clearErrors();
     }
@@ -116,10 +135,10 @@ class SessionForm extends React.Component {
 
     render() {
         const errorList = this.props.errors.map((error, idx) => <li className="errors" key={idx}>{error}</li>)
-        
+
         const display = this.props.bool ? (
             <div className="log-in-container">
-                <form className="log-in-form">
+                <form id="loginid" className="log-in-form">
                     <div className="ball-container">
                         <h1 className="blue-ball">.</h1>
                         <h1 className="pink-ball">.</h1>
@@ -157,7 +176,7 @@ class SessionForm extends React.Component {
             </div>
         ) : (
             <div className="sign-up-container">
-                <form className="sign-up-form">
+                <form id="signupid" className="sign-up-form">
                     <div className="ball-container">
                         <h1 className="blue-ball">.</h1>
                         <h1 className="pink-ball">.</h1>
