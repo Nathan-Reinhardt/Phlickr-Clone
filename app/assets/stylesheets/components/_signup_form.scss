@@ -7,10 +7,14 @@
     margin-bottom: -5px;
 }
 
-.sign-up-form {
+.sign-up-form, .sign-up-form-err {
     margin-top: -20px;
-    height: 660px;
+    height: 569px;
     width: 272px;
+}
+
+.sign-up-form-err {
+    height: 645px;
 }
 
 // Form content

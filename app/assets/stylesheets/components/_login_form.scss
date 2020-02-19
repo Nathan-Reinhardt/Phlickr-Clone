@@ -5,14 +5,18 @@
     width: 500px;
 }
 
-.log-in-form {
+.log-in-form, .log-in-form-err {
     background-color: white;
     margin-top: -25px;
     margin-right: 65px;
     padding: 24px;
-    height: 455px;
+    height: 385px;
     width: 272px;
     border-radius: 5px;
+}
+
+.log-in-form-err {
+    height: 439px;
 }
 
 // Error Popup Content
