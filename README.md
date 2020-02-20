@@ -1,6 +1,6 @@
 # Phlickr
 
-[Live App](https://phlickr-clone.herokuapp.com/#/)
+[Phlickr](https://phlickr-clone.herokuapp.com/#/) is a pixel perfect clone.
 
 ### Technologies
 
