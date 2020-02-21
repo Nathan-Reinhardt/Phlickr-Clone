@@ -24,12 +24,6 @@
 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/C364E26D-CF4E-45A1-9CBB-4DB71F64755E_1_105_c.jpeg"/>
 
-### Code Snippets
-
-Here is some of the frontend work I made for the login/signup forms
-
-<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/4AF29887-AB46-44BA-AFD0-1843E800778B.jpeg" />
-
 ### Possible Future Features
 
 In the future I would like to add on:
