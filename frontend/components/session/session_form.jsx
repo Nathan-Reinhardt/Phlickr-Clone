@@ -137,7 +137,7 @@ class SessionForm extends React.Component {
         const errorList = this.props.errors.map((error, idx) => <li className="errors" key={idx}>{error}</li>)
 
         const display = this.props.bool ? (
-            <div className="log-in-container">
+            <div id="logcont" className="log-in-container">
                 <form id="loginid" className="log-in-form">
                     <div className="ball-container">
                         <h1 className="blue-ball">.</h1>
@@ -175,7 +175,7 @@ class SessionForm extends React.Component {
                 </form>
             </div>
         ) : (
-            <div className="sign-up-container">
+            <div id="signupcont" className="sign-up-container">
                 <form id="signupid" className="sign-up-form">
                     <div className="ball-container">
                         <h1 className="blue-ball">.</h1>

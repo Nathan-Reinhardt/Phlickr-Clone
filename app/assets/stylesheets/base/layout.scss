@@ -2,20 +2,10 @@
 
 .back-ground, .logged-back-ground, .back-ground-session, .back-ground-photos {
 	width: 100vw;
+	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-// If you wanna scroll pictures, remember to
-// use postion fixed
-
-.back-ground, .back-ground-session, .back-ground-photos {
-	height: 100%
-}
-
-.logged-back-ground, .back-ground-photos {
-	height: 100vh;
 }
 
 // Background Images

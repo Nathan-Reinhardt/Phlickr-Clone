@@ -41,8 +41,8 @@
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    width: 100%;
-    height: 740px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .log-in-container, .sign-up-container {
@@ -55,7 +55,6 @@
 .log-in-form, .sign-up-form,
 .log-in-form-err, .sign-up-form-err {
     background-color: white;
-    margin-right: 65px;
     padding: 24px;
     border-radius: 5px;
 }
