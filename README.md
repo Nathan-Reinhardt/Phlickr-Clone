@@ -9,6 +9,7 @@
 * Webpack
 * Ruby on Rails
 * PostgreSQL
+* AWS
 
 ### Features
 
