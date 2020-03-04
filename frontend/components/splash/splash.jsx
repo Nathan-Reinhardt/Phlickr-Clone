@@ -27,15 +27,21 @@ const Splash = (props) => {
             <NavBar />
             <div className="splash-content">
                 <div className="inspiration-content">
-                    <h1 className="find-insp">Find your inspiration.</h1>
-                    <h3 className="insp-desc1">
-                    Join the Phlickr community, home to tens of billions of
-                    </h3>
-                    <h3 className="insp-desc2">
-                    photos and 2 million groups.
-                    </h3>
+                    <div className="find-insp-cont">
+                        <h1 className="find-insp">Find your inspiration.</h1>
+                    </div>
+                    <div className="insp-desc1-cont">
+                        <h3 className="insp-desc1">
+                        Join the Phlickr community, home to tens of billions of
+                        </h3>
+                    </div>
+                    <div className="insp-desc2-cont">
+                        <h3 className="insp-desc2">
+                        photos and 2 million groups.
+                        </h3>
+                    </div>
                     <div className="splashbtn-container">
-                        <Link className="signbtn-splash" to="/signup">Sign Up</Link>
+                        <Link className="signbtn-splash" to="/signup">Start For Free</Link>
                     </div>
                     <div className="demo-container">
                         <button className="signbtn-splash" onClick={demouser}>Demo</button>
