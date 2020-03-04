@@ -41,7 +41,7 @@ const Splash = (props) => {
                         </h3>
                     </div>
                     <div className="splashbtn-container">
-                        <Link className="signbtn-splash" to="/signup">Start For Free</Link>
+                        <Link className="signbtn-splash" to="/signup">Start for free</Link>
                     </div>
                     <div className="demo-container">
                         <button className="signbtn-splash" onClick={demouser}>Demo</button>
