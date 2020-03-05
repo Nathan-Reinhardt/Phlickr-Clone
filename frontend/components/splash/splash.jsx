@@ -23,7 +23,7 @@ const Splash = (props) => {
             </div>
         </div>
     ) : (
-        <div className="back-ground">
+        <div className="SLIDE-BG">
             <NavBar />
             <div className="splash-content">
                 <div className="inspiration-content">

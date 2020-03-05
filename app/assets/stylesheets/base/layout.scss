@@ -1,17 +1,46 @@
 // Background Properties
 
-.back-ground, .logged-back-ground, .back-ground-session, .back-ground-photos {
+.SLIDE-BG, .logged-back-ground, .back-ground-session, .back-ground-photos {
 	width: 100%;
 	height: 100vh;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	backface-visibility: hidden;
 }
 
 // Background Images
 
-.back-ground {
+.SLIDE-BG {
+	animation: slideBg 30s linear infinite 0s;
+	animation-timing-function: ease;
 	background-image: image-url('splashnouser.jpg');
+}
+
+@keyframes slideBg {
+	0% {
+		background-image: image-url('splashnouser.jpg');
+	}
+
+	20% {
+		background-image: image-url('freeland.jpg');
+	}
+
+	40% {
+		background-image: image-url('shawnang.jpg');
+	}
+
+	60% {
+		background-image: image-url('treeplace.jpg');
+	}
+
+	80% {
+		background-image: image-url('freeland.jpg');
+	}
+
+	100% {
+		background-image: image-url('splashnouser.jpg');
+	}
 }
 
 .logged-back-ground {
@@ -20,6 +49,7 @@
 
 .back-ground-session {
 	background-image: image-url('shawnang.jpg');
+	height: 115vh;
 }
 
 .back-ground-photos {
