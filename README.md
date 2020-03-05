@@ -5,6 +5,8 @@
 ### Technologies
 
 * Javascript
+* HTML
+* SCSS
 * React/Redux
 * Webpack
 * Ruby on Rails
