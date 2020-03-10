@@ -13,7 +13,7 @@
 
 .SLIDE-BG {
 	animation: slideBg 30s linear infinite 0s;
-	animation-timing-function: ease;
+	animation-timing-function: cubic-bezier(1,0,0,1);
 	background-image: image-url('splashnouser.jpg');
 }
 
