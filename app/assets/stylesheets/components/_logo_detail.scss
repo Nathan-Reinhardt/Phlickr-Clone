@@ -1,0 +1,57 @@
+// Detail component
+
+.detail-bar-container {
+    z-index: 2;
+}
+
+.detail-bar {
+    display: flex;
+    width: auto;
+    height: 50px;
+    z-index: 2;
+    background-color: rgb(32, 33, 35);
+}
+
+.detail-container {
+    margin-top: 9px;
+    margin-left: 50px;
+    padding-left: 95px;
+    z-index: 2;
+}
+
+// logged detail display
+
+.logged-detail {
+    display: flex;
+}
+
+.greet-logout {
+    display: flex;
+    margin-top: 6px;
+    margin-left: 500px;
+    padding-left: 350px;
+}
+
+.detail-title, .profile-link {
+    text-decoration: none;
+}
+
+.detail-title {
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+    margin-left: -16px;
+}
+
+.profile-link {
+    color: white;
+    font-size: 15.5px;
+    margin-left: 1.8vw;
+    margin-top: 1vh;
+}
+
+// logged detail display hover effects
+
+.profile-link:hover {
+    color: gray;
+}

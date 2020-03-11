@@ -1,44 +1,5 @@
 // Session Form General
 
-// Detail component
-
-.detail-bar-container {
-    z-index: 2;
-}
-
-.detail-bar {
-    display: flex;
-    width: auto;
-    height: 48px;
-    z-index: 2;
-    background-color: rgb(32, 33, 35);
-}
-
-.detail-container {
-    margin-top: 9px;
-    margin-left: 50px;
-    padding-left: 95px;
-    z-index: 2;
-}
-
-.logged-detail {
-    display: flex;
-}
-
-.greet-logout {
-    display: flex;
-    margin-top: 6px;
-    margin-left: 500px;
-    padding-left: 350px;
-}
-
-.detail-title {
-    color: white;
-    font-size: 29px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 // Session
 
 .session-form-container {
