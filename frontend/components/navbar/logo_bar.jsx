@@ -7,9 +7,10 @@ const LogoDetailBar = (props) => {
     const display = props.currentUser ? (
         <div className="logged-detail">
             <label className="detail-title">phlickr</label>
+            <Link className="profile-link" to={`/people/${props.currentUser}`}>
+                You
+            </Link>
             <div className="greet-logout">
-                <Link className="hide-photos" to="/">Hide Photos</Link>
-                <Link className="all-photos" to="/photos">All Photos</Link>
                 <GreetingContainer />
             </div>
         </div>

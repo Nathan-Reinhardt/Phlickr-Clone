@@ -40,6 +40,7 @@ export const login = formUser => dispatch => postLogin(formUser)
 export const logout = () => dispatch => logoutSession()
     .then(() => dispatch(logoutCurrentUser()))
     .fail((error) => dispatch(receiveSessionErrors(error)));
+
 export const signup = formUser => dispatch => createUser(formUser)
     .then(user => dispatch(receiveCurrentUser(user)))
     .fail((error) => dispatch(receiveSessionErrors(error)));
