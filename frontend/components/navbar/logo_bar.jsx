@@ -10,6 +10,12 @@ const LogoDetailBar = (props) => {
             <Link className="profile-link" to={`/people/${props.currentUser}`}>
                 You
             </Link>
+            <h1 className="explore-logged">Explore</h1>
+            <div className="prints-container">
+                <h1 className="prints-logged">Prints</h1>
+                <h1 className="prints-new-logged">NEW</h1>
+            </div>
+            <h1 className="get-pro-logged">Get Pro</h1>
             <div className="greet-logout">
                 <GreetingContainer />
             </div>

@@ -21,37 +21,68 @@
 
 // logged detail display
 
-.logged-detail {
+.logged-detail, .prints-container {
     display: flex;
 }
 
 .greet-logout {
     display: flex;
-    margin-top: 6px;
-    margin-left: 500px;
-    padding-left: 350px;
+    margin-top: 1vh;
+    margin-left: 35vw;
 }
 
-.detail-title, .profile-link {
+.detail-title, .profile-link, .explore-logged,
+.prints-logged, .prints-new-logged, .get-pro-logged {
     text-decoration: none;
+    color: white;
+    font-size: 15.5px;
+}
+
+.profile-link, .explore-logged,
+.prints-logged, .prints-new-logged, .get-pro-logged {
+    margin-top: 1vh;
 }
 
 .detail-title {
-    color: white;
     font-size: 29px;
     font-weight: bold;
     margin-left: -16px;
 }
 
 .profile-link {
-    color: white;
-    font-size: 15.5px;
     margin-left: 1.8vw;
-    margin-top: 1vh;
+}
+
+.explore-logged {
+    margin-left: 2.4vw;
+}
+
+.prints-container, .get-pro-logged {
+    margin-left: 2.45vw;
+}
+
+.prints-new-logged {
+    margin-left: 0.3vw;
+    font-size: 12.5px;
+    margin-top: 1.3vh;
+    background-color: rgb(236, 64, 131);
+    padding-left: 2.7px;
+    padding-right: 2.7px;
+    padding-top: 0.1px;
+    padding-bottom: 0.2px;
+    border-radius: 3px;
+    height: 2.2vh;
+    font-weight: bold;
+}
+
+.get-pro-logged {
+    font-size: 15px;
 }
 
 // logged detail display hover effects
 
-.profile-link:hover {
-    color: gray;
+.profile-link:hover, .explore-logged:hover, 
+.get-pro-logged:hover, .prints-container:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
