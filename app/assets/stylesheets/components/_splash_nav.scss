@@ -47,13 +47,6 @@
     width: 16.5vw;
 }
 
-.search-box-container:focus, .search-text-box:focus,
-.logged-search-box-container:focus, .logged-search-text-box:focus {
-    background-color: white;
-    opacity: 1;
-    outline: none;
-}
-
 .search-text-box, .logged-search-text-box {
     background-color: white;
     opacity: 0.7;
@@ -79,6 +72,16 @@
     color: rgb(127, 126, 128);
 }
 
+.search-text-box:focus {
+    opacity: 1;
+    outline: none;
+}
+
+.logged-search-text-box:focus + .logged-mag-search:focus {
+    opacity: 1;
+    outline: none;
+}
+
 .mag-search, .logged-mag-search {
     background-color: white;
     opacity: 0.7;
@@ -102,11 +105,6 @@
     opacity: 0.8;
 }
 
-.mag-search:hover {
-    cursor: pointer;
-    opacity: 1;
-}
-
-.logged-mag-search:hover {
+.mag-search:hover, .logged-mag-search:hover {
     cursor: pointer;
 }
