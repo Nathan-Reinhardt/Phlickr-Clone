@@ -6,7 +6,9 @@ const LogoDetailBar = (props) => {
 
     const display = props.currentUser ? (
         <div className="logged-detail">
-            <label className="detail-title">phlickr</label>
+            <Link className="detail-title" to="/">
+                phlickr
+            </Link>
             <Link className="profile-link" to={`/people/${props.currentUser}`}>
                 You
             </Link>

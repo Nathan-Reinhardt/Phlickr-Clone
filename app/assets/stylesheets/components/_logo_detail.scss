@@ -82,7 +82,8 @@
 // logged detail display hover effects
 
 .profile-link:hover, .explore-logged:hover, 
-.get-pro-logged:hover, .prints-container:hover {
+.get-pro-logged:hover, .prints-container:hover,
+.detail-title:hover {
     cursor: pointer;
     opacity: 0.7;
 }
