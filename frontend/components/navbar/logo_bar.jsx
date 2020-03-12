@@ -1,5 +1,4 @@
 import React from 'react';
-import GreetingContainer from '../greeting/greeting_container';
 import { Link } from 'react-router-dom';
 
 const LogoDetailBar = (props) => {
@@ -21,8 +20,9 @@ const LogoDetailBar = (props) => {
                 <h1 className="get-pro-logged">Get Pro</h1>
             </div>
             <div className="rightside-logo-container">
-                <div>
-
+                <div className="logged-search-box-container">
+                    <label className="mag-search">&#128269;</label>
+                    <input className="logged-search-text-box" type="text" placeholder="Photos, people, or groups"/>
                 </div>
                 <div>
 

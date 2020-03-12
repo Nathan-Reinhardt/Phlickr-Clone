@@ -31,27 +31,30 @@
     cursor: pointer;
 }
 
-// Textbox
+// All Search Box CSS here!!! //
 
-.search-box-container {
+.search-box-container, .logged-search-box-container {
     display: flex;
     height: 33px;
+}
+
+.search-box-container {
     width: 100%;
     margin-left: 100px;
 }
 
-.search-box-container:focus > .search-text-box{
+.search-box-container:focus, .search-text-box:focus,
+.logged-search-box-container:focus, .logged-search-text-box:focus {
     background-color: white;
     opacity: 1;
     outline: none;
 }
 
-.search-text-box {
+.search-text-box, .logged-search-text-box {
     margin-top: 16px;
     background-color: white;
     opacity: 0.7;
     height: 33px;
-    width: 90.8%;
     font-size: 13.62px;
     border: none;
     border-top-right-radius: 3px;
@@ -59,10 +62,8 @@
     transition: 0.5s;
 }
 
-.search-text-box:focus {
-    background-color: white;
-    opacity: 1;
-    outline: none;
+.search-text-box {
+    width: 90.8%;
 }
 
 .mag-search {
