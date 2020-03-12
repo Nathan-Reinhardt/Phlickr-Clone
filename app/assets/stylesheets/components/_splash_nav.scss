@@ -43,6 +43,10 @@
     margin-left: 100px;
 }
 
+.logged-search-box-container {
+    width: 16.5vw;
+}
+
 .search-box-container:focus, .search-text-box:focus,
 .logged-search-box-container:focus, .logged-search-text-box:focus {
     background-color: white;
@@ -51,7 +55,6 @@
 }
 
 .search-text-box, .logged-search-text-box {
-    margin-top: 16px;
     background-color: white;
     opacity: 0.7;
     height: 33px;
@@ -63,16 +66,25 @@
 }
 
 .search-text-box {
+    margin-top: 16px;
     width: 90.8%;
 }
 
-.mag-search {
+.logged-search-text-box {
+    width: 11.5vw;
+    opacity: 0.8;
+}
+
+.logged-search-text-box::placeholder {
+    color: rgb(127, 126, 128);
+}
+
+.mag-search, .logged-mag-search {
     background-color: white;
     opacity: 0.7;
     text-align: center;
     height: 29px;
     width: 42px;
-    margin-top: 16px;
     margin-left: 2px;
     font-size: 16px;
     padding-top: 4px;
@@ -82,7 +94,19 @@
     transition: 0.5s;
 }
 
+.mag-search {
+    margin-top: 16px;
+}
+
+.logged-mag-search {
+    opacity: 0.8;
+}
+
 .mag-search:hover {
     cursor: pointer;
     opacity: 1;
+}
+
+.logged-mag-search:hover {
+    cursor: pointer;
 }
