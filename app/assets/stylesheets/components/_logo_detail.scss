@@ -19,17 +19,17 @@
     z-index: 2;
 }
 
+.logged-detail, .prints-container, .greet-logout, 
+.leftside-logo-container, .rightside-logo-container {
+    display: flex;
+}
+
+.logged-detail {
+    justify-content: space-between;
+    width: 84vw;
+}
+
 // logged detail display
-
-.logged-detail, .prints-container {
-    display: flex;
-}
-
-.greet-logout {
-    display: flex;
-    margin-top: 1vh;
-    margin-left: 35vw;
-}
 
 .detail-title, .profile-link, .explore-logged,
 .prints-logged, .prints-new-logged, .get-pro-logged {
