@@ -1,0 +1,35 @@
+// scss for splash page once you have logged in //
+
+// tabs bar //
+
+.logged-tabs-container, .tab-but-container {
+    display: flex;
+}
+
+.logged-tabs-container {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    width: 100%;
+    height: 49px;
+}
+
+.tab-but-container {
+    margin-left: 9vw;
+}
+
+.all-activity-but, .people-but, .groups-but {
+    color: rgb(84, 84, 84);
+    border-bottom: 3px solid transparent;
+    height: 46px;
+    width: 85px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.all-activity-but {
+    width: 100px;
+}
+
+.all-activity-but:hover, .people-but:hover, .groups-but:hover {
+    color: black;
+    border-bottom: 3px solid blue;
+}
