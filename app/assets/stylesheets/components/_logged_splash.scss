@@ -13,23 +13,29 @@
 }
 
 .tab-but-container {
-    margin-left: 9vw;
+    margin-left: 10.2vw;
 }
 
 .all-activity-but, .people-but, .groups-but {
     color: rgb(84, 84, 84);
     border-bottom: 3px solid transparent;
-    height: 46px;
-    width: 85px;
+    height: 43px;
+    width: 90px;
     font-size: 15px;
-    transition: 0.4s;
+    transition: 0.2s;
+    margin-top: 3px;
 }
 
 .all-activity-but {
-    width: 100px;
+    width: 110px;
+}
+
+.people-but, .groups-but {
+    margin-left: 10px;
 }
 
 .all-activity-but:hover, .people-but:hover, .groups-but:hover {
+    cursor: pointer;
     color: black;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid rgb(50, 145, 220);
 }
