@@ -45,6 +45,7 @@
 
 .logged-search-box-container {
     width: 16.5vw;
+    margin-right: 6.75vw;
 }
 
 .search-text-box, .logged-search-text-box {
@@ -53,19 +54,21 @@
     height: 33px;
     font-size: 13.62px;
     border: none;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
     transition: 0.5s;
 }
 
 .search-text-box {
     margin-top: 16px;
     width: 90.8%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .logged-search-text-box {
-    width: 11.5vw;
+    width: 11.7vw;
     opacity: 0.8;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .logged-search-text-box::placeholder {
@@ -77,17 +80,11 @@
     outline: none;
 }
 
-.logged-search-text-box:focus + .logged-mag-search:focus {
-    opacity: 1;
-    outline: none;
-}
-
 .mag-search, .logged-mag-search {
     background-color: white;
     opacity: 0.7;
     text-align: center;
     height: 29px;
-    width: 42px;
     margin-left: 2px;
     font-size: 16px;
     padding-top: 4px;
@@ -99,10 +96,18 @@
 
 .mag-search {
     margin-top: 16px;
+    width: 42px;
 }
 
 .logged-mag-search {
     opacity: 0.8;
+    width: 43px;
+}
+
+.logged-search-text-box:focus {
+    opacity: 1;
+    outline: none;
+    width: 20vw;
 }
 
 .mag-search:hover, .logged-mag-search:hover {

@@ -21,14 +21,14 @@ const LogoDetailBar = (props) => {
             </div>
             <div className="rightside-logo-container">
                 <div className="logged-search-box-container">
-                    <label className="logged-mag-search">&#128269;</label>
+                    <h1 className="logged-mag-search">&#128269;</h1>
                     <input className="logged-search-text-box" type="text" placeholder="Photos, people, or groups"/>
                 </div>
-                <div>
-
+                <div className="cloud-icon-container">
+                    <h1 className="cloud-icon">.</h1>
                 </div>
-                <div>
-
+                <div className="notification-bell-container">
+                    <h1 className="notification-bell">.</h1>
                 </div>
                 <div className="greet-logout">
                     <button className="signbtn" onClick={() => props.logout()}>Log Out</button>

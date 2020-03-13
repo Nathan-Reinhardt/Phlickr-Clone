@@ -20,7 +20,8 @@
 }
 
 .logged-detail, .prints-container, .greet-logout, 
-.leftside-logo-container, .rightside-logo-container {
+.leftside-logo-container, .rightside-logo-container,
+.cloud-icon-container, .notification-bell-container {
     display: flex;
 }
 
@@ -79,11 +80,30 @@
     font-size: 15px;
 }
 
+// right side of logged nav bar
+
+.cloud-icon, .notification-bell {
+    margin-top: -0.5vh;
+}
+
+.cloud-icon {
+    background-image: image-url('clouduploadicon.jpeg');
+    width: 2.9vw;
+    margin-left: -7.1vw;
+}
+
+.notification-bell {
+    background-image: image-url('notificationbellicon.jpeg');
+    width: 2.2vw;
+    margin-left: -3.28vw;
+}
+
 // logged detail display hover effects
 
 .profile-link:hover, .explore-logged:hover, 
 .get-pro-logged:hover, .prints-container:hover,
-.detail-title:hover {
+.detail-title:hover, .cloud-icon:hover,
+.notification-bell:hover {
     cursor: pointer;
     opacity: 0.7;
 }
