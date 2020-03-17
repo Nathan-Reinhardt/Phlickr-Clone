@@ -18,7 +18,7 @@ const Splash = (props) => {
     const display = props.currentUser ? (
         <div className="logged-back-ground">
             <LogoDetailBarContainer />
-            <div className="root-content">
+            <div className="root-tab-content">
                 <div className="logged-tabs-container">
                     <div className="tab-but-container">
                         <button className="all-activity-but">All Activity</button>
@@ -26,6 +26,9 @@ const Splash = (props) => {
                         <button className="groups-but">Groups</button>
                     </div>
                 </div>
+            </div>
+            <div className="adverstisement-container">
+                <h1 className="ad-vert">.</h1>
             </div>
         </div>
     ) : (

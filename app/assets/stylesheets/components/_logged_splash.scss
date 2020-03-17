@@ -2,7 +2,7 @@
 
 // tabs bar //
 
-.logged-tabs-container, .tab-but-container {
+.logged-tabs-container, .tab-but-container, .advertisement-container {
     display: flex;
 }
 
@@ -39,4 +39,24 @@
     cursor: pointer;
     color: black;
     border-bottom: 3px solid rgb(50, 145, 220);
+}
+
+// adverstisement on page //
+
+.advertisement-container {
+    justify-content: center;
+    width: 100%;
+}
+
+.ad-vert {
+    color: rgb(243, 245, 246);
+    background-image: image-url('advertisement_flickr.jpeg');
+    width: 970px;
+    height: 250px;
+    margin-left: 16.3vw;
+    margin-top: 5.6vh;
+}
+
+.ad-vert:hover {
+    cursor: pointer;
 }
