@@ -2,7 +2,8 @@
 
 // tabs bar //
 
-.logged-tabs-container, .tab-but-container, .advertisement-container {
+.logged-tabs-container, .tab-but-container, 
+.advertisement-container, .phlickr-pro-container {
     display: flex;
 }
 
@@ -43,7 +44,7 @@
 
 // adverstisement on page //
 
-.advertisement-container {
+.advertisement-container, .phlickr-pro-container {
     justify-content: center;
     width: 100%;
 }
@@ -59,4 +60,18 @@
 
 .ad-vert:hover {
     cursor: pointer;
+}
+
+.phlickr-pro-container {
+    margin-top: 5px;
+}
+
+.phlickr-pro-message {
+    font-size: 13.3px;
+    color: rgb(143, 143, 143);
+}
+
+.phlickr-pro-message:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }

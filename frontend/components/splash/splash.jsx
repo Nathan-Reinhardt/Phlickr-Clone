@@ -30,6 +30,11 @@ const Splash = (props) => {
             <div className="adverstisement-container">
                 <h1 className="ad-vert">.</h1>
             </div>
+            <div className="phlickr-pro-container">
+                <h1 className="phlickr-pro-message">
+                    Upgrade to Phlickr Pro to hide these ads
+                </h1>
+            </div>
         </div>
     ) : (
         <div className="SLIDE-BG">
