@@ -20,11 +20,10 @@
  * When a photo is individually picked, it shows the title and description of the photo.
  
 ### Screenshots
-<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/4B847D8F-5E06-4A23-BAC8-07F446209C54_1_105_c.jpeg"/>
 
-<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/94848857-2580-4CE7-8BEA-5FAD4CBFC314_1_105_c.jpeg"/>
+<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/D2C711AE-E7A6-4B12-BBDF-35717AFE1845_1_105_c.jpeg"/>
 
-<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/C364E26D-CF4E-45A1-9CBB-4DB71F64755E_1_105_c.jpeg"/>
+<img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/91ADC8FA-00B4-41A0-AC0E-2A7A1855B8ED_1_105_c.jpeg"/>
 
 ### Possible Future Features
 
