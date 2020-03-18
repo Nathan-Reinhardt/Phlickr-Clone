@@ -58,10 +58,6 @@
     margin-top: 5.6vh;
 }
 
-.ad-vert:hover {
-    cursor: pointer;
-}
-
 .phlickr-pro-container {
     margin-top: 5px;
 }
@@ -69,6 +65,12 @@
 .phlickr-pro-message {
     font-size: 13.3px;
     color: rgb(143, 143, 143);
+}
+
+// hover effects
+
+.ad-vert:hover {
+    cursor: pointer;
 }
 
 .phlickr-pro-message:hover {
