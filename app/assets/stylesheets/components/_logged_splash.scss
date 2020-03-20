@@ -2,8 +2,8 @@
 
 // tabs bar //
 
-.logged-tabs-container, .tab-but-container, 
-.advertisement-container, .phlickr-pro-container {
+.logged-tabs-container, .tab-but-container,
+.phlickr-pro-container, .wholeadvert-container {
     display: flex;
 }
 
@@ -44,18 +44,19 @@
 
 // adverstisement on page //
 
-.advertisement-container, .phlickr-pro-container {
+.wholeadvert-container, .phlickr-pro-container {
     justify-content: center;
+    align-items: center;
     width: 100%;
+    margin-top: 5.6vh;
 }
 
 .ad-vert {
-    color: transparent;
+    color: white;
     background-image: image-url('advertisement_flickr.jpeg');
     width: 970px;
     height: 250px;
-    margin-left: 16.3vw;
-    margin-top: 5.6vh;
+    margin: 0px;
 }
 
 .phlickr-pro-container {

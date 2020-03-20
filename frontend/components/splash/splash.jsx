@@ -27,8 +27,10 @@ const Splash = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="adverstisement-container">
-                <h1 className="ad-vert">.</h1>
+            <div className="wholeadvert-container">
+                <div>
+                    <img className="ad-vert"/>
+                </div>
             </div>
             <div className="phlickr-pro-container">
                 <h1 className="phlickr-pro-message">
