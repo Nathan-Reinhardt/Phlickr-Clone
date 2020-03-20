@@ -29,7 +29,9 @@ const Splash = (props) => {
             </div>
             <div className="wholeadvert-container">
                 <div>
-                    <img className="ad-vert"/>
+                    <a href="https://skylum.com/l/l4-flickr-sky-try?utm_source=flickr&utm_medium=partner&utm_campaign=Luminar_4_flickr_sky_us&utm_term=970x250" target="_blank">
+                        <img className="ad-vert"/>
+                    </a>
                 </div>
             </div>
             <div className="phlickr-pro-container">
