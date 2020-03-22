@@ -53,7 +53,6 @@
     opacity: 0.7;
     height: 33px;
     border: none;
-    transition: 0.5s;
 }
 
 .search-text-box {
@@ -62,6 +61,7 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     font-size: 13.62px;
+    transition: 0.5s;
 }
 
 .logged-search-text-box {

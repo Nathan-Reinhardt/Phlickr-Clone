@@ -6,7 +6,9 @@ const ProfileShow = (props) => {
 
     const display = props.currentUser ? (
         <div className="profile-cover">
-            
+            <div>
+                
+            </div>
         </div>
     ) : (
         null
