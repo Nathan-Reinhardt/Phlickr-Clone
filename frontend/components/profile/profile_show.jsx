@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const ProfileShow = (props) => {
 
     const display = props.currentUser ? (
-        <div className="photo-holder-background">
-            <h1>Placeholder hello there :)</h1>
+        <div className="profile-cover">
+            
         </div>
     ) : (
         null
