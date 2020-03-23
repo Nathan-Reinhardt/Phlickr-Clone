@@ -1,9 +1,23 @@
 // for the profile page when you go to your profile //
 
+// profile containers //
+
 .profile-cover {
     background-image: image-url('phlickrprofilebackground.jpeg');
     width: 100%;
-    height: 251.5px;
+    height: 101.5px;
+    padding-top: 150px;
     z-index: 2;
     margin-top: -0.2vh;
+}
+
+.profile-contents {
+    margin-left: 18vw;
+}
+
+// profile contents //
+
+.profile-name {
+    color: white;
+    font-size: 34px;
 }

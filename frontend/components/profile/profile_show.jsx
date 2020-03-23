@@ -1,13 +1,19 @@
 import React from 'react';
 import LogoDetailBarContainer from '../navbar/logo_bar_container';
-import { Link } from 'react-router-dom';
 
 const ProfileShow = (props) => {
 
     const display = props.currentUser ? (
         <div className="profile-cover">
-            <div>
-                
+            <div className="profile-contents">
+                <div>
+                    <h1 className="profile-name">
+                        {props.currentUser.first_name} {props.currentUser.last_name}
+                    </h1>
+                </div>
+                <div>
+
+                </div>
             </div>
         </div>
     ) : (
