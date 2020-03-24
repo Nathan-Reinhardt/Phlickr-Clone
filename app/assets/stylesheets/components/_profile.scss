@@ -15,10 +15,22 @@
     margin-left: 18vw;
 }
 
+.email-follow-container {
+    display: flex;
+    padding-top: 1.9vh;
+}
+
 // profile contents //
 
-.profile-name {
+.profile-name, .short-email {
     color: white;
-    font-size: 34px;
     font-weight: lighter;
+}
+
+.profile-name {
+    font-size: 34px;
+}
+
+.short-email {
+    font-size: 14px;
 }

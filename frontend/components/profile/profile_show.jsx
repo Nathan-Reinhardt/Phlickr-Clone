@@ -3,6 +3,21 @@ import LogoDetailBarContainer from '../navbar/logo_bar_container';
 
 const ProfileShow = (props) => {
 
+    const spliceEmail = () => {
+        let email = props.currentUser.email;
+        let result = "";
+        let letter = "";
+        for (let i = 0; i < email.length; i++) {
+            letter = email[i];
+            if (letter === "@") {
+                return result;
+            }
+            else {
+                result += letter
+            }
+        }
+    }
+
     const display = props.currentUser ? (
         <div className="profile-cover">
             <div className="profile-contents">
@@ -11,8 +26,10 @@ const ProfileShow = (props) => {
                         {props.currentUser.first_name} {props.currentUser.last_name}
                     </h1>
                 </div>
-                <div>
-
+                <div className="email-follow-container">
+                    <h1 className="short-email">
+                        {spliceEmail()}
+                    </h1>
                 </div>
             </div>
         </div>
