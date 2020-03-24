@@ -22,15 +22,35 @@
 
 // profile contents //
 
-.profile-name, .short-email {
+.profile-name, .short-email, .followers-count,
+.white-dot, .following-count {
     color: white;
     font-weight: lighter;
+}
+
+.short-email, .followers-count, .following-count {
+    font-size: 14px;
+}
+
+.short-email {
+    margin-right: 30px;
 }
 
 .profile-name {
     font-size: 34px;
 }
 
-.short-email {
-    font-size: 14px;
+.white-dot {
+    font-size: 25px;
+    margin-left: 6.5px;
+    margin-right: 5px;
+    margin-top: -10px;
+    font-family: 'Courier New', Courier, monospace;     // note might want to use these on the login and signup form page for the dots at the top
+}
+
+// hover effects //
+
+.followers-count:hover, .following-count:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
