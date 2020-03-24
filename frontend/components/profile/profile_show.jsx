@@ -21,7 +21,7 @@ const ProfileShow = (props) => {
     );
 
     return (
-        <div className="backkkk">
+        <div className="profile-page-container">
             <LogoDetailBarContainer />
             {display}
         </div>

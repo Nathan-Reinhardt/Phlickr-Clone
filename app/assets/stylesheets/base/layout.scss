@@ -1,6 +1,7 @@
 // Background Properties
 
-.SLIDE-BG, .logged-back-ground, .back-ground-session, .back-ground-photos {
+.SLIDE-BG, .logged-back-ground, .back-ground-session, 
+.back-ground-photos, .profile-page-container {
 	width: 100%;
 	height: 100vh;
 	background-position: center center;
@@ -43,7 +44,7 @@
 	}
 }
 
-.logged-back-ground {
+.logged-back-ground, .profile-page-container {
 	background-color: rgb(243, 245, 246);
 }
 
