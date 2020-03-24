@@ -60,13 +60,13 @@ const ProfileShow = (props) => {
                 </div>
             </div>
             <div className="logged-tabs-container">
-                <div className="tab-but-container">
+                <div className="profile-tabs-container">
                     <button className="about-but">About</button>
                     <button className="photostream-but">Photostream</button>
-                    <button className="almbums-but">Albums</button>
+                    <button className="albums-but">Albums</button>
                     <button className="faves-but">Faves</button>
                     <button className="gallery-but">Galleries</button>
-                    <button className="groups-but">Groups</button>
+                    <button className="profile-groups-but">Groups</button>
                     <button className="stats-but">Stats</button>
                     <button className="camera-roll-but">Camera Roll</button>
                 </div>

@@ -32,6 +32,10 @@
     padding-top: 12px;
 }
 
+.profile-tabs-container {
+    margin-left: 10vw;
+}
+
 // profile contents //
 
 .profile-name, .short-email, .followers-count, .white-dot, 
@@ -65,9 +69,32 @@
     margin-left: 30px;
 }
 
+// buttons on tab bar //
+
+.about-but, .photostream-but, .albums-but, .faves-but,
+.gallery-but, .profile-groups-but, .stats-but, .camera-roll-but {
+    color: rgb(84, 84, 84);
+    border-bottom: 3px solid transparent;
+    height: 43px;
+    font-size: 16px;
+    transition: 0.2s;
+    margin-top: 3.7px;
+}
+
+.about-but {
+    width: 80px;
+}
+
 // hover effects //
 
 .followers-count:hover, .following-count:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.about-but:hover, .photostream-but:hover, .albums-but:hover, .faves-but:hover,
+.gallery-but:hover, .profile-groups-but:hover, .stats-but:hover, .camera-roll-but:hover {
+    cursor: pointer;
+    color: black;
+    border-bottom: 3px solid rgb(50, 145, 220);
 }
