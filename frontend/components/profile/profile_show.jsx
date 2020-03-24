@@ -48,7 +48,12 @@ const ProfileShow = (props) => {
                         </h1>
                     </div>
                     <div className="photo-joined-container">
-
+                        <h1 className="photo-upload-amount">
+                            0 Photos
+                        </h1>
+                        <h1 className="joined-date">
+                            Joined 2020
+                        </h1>
                     </div>
                 </div>
             </div>

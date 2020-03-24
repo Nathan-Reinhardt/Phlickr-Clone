@@ -15,21 +15,34 @@
     margin-left: 18vw;
 }
 
-.email-follow-container {
+.full-content-container, .email-follow-container, .photo-joined-container {
     display: flex;
-    padding-top: 1.9vh;
+}
+
+.full-content-container {
+    justify-content: space-between;
+}
+
+.email-follow-container {
+    padding-top: 1.8vh;
+}
+
+.photo-joined-container {
+    margin-right: 10vw;
+    padding-top: 12px;
 }
 
 // profile contents //
 
-.profile-name, .short-email, .followers-count,
-.white-dot, .following-count {
+.profile-name, .short-email, .followers-count, .white-dot, 
+.following-count, .photo-upload-amount, .joined-date {
     color: white;
     font-weight: lighter;
 }
 
-.short-email, .followers-count, .following-count {
-    font-size: 14px;
+.short-email, .followers-count, .following-count,
+.photo-upload-amount, .joined-date {
+    font-size: 15.5px;
 }
 
 .short-email {
@@ -41,11 +54,15 @@
 }
 
 .white-dot {
-    font-size: 25px;
+    font-size: 24px;
     margin-left: 6.5px;
     margin-right: 5px;
-    margin-top: -10px;
+    margin-top: -9.5px;
     font-family: 'Courier New', Courier, monospace;     // note might want to use these on the login and signup form page for the dots at the top
+}
+
+.joined-date {
+    margin-left: 30px;
 }
 
 // hover effects //
