@@ -33,7 +33,7 @@
 }
 
 .profile-tabs-container {
-    margin-left: 10vw;
+    margin-left: 10.1vw;
 }
 
 // profile contents //
@@ -76,13 +76,44 @@
     color: rgb(84, 84, 84);
     border-bottom: 3px solid transparent;
     height: 43px;
-    font-size: 16px;
+    font-size: 15.7px;
     transition: 0.2s;
-    margin-top: 3.7px;
+    margin-top: 3.9px;
+    margin-left: 0.6vw;
 }
 
 .about-but {
     width: 80px;
+    margin-left: 0vw;
+}
+
+.photostream-but {
+    font-size: 15.5px;
+    width: 133px;
+}
+
+.albums-but {
+    width: 92px;
+}
+
+.faves-but {
+    width: 85px;
+}
+
+.gallery-but {
+    width: 100px;
+}
+
+.profile-groups-but {
+    width: 95px;
+}
+
+.stats-but {
+    width: 75px;
+}
+
+.camera-roll-but {
+    width: 130px;
 }
 
 // hover effects //
