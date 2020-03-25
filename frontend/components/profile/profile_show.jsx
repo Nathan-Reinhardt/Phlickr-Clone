@@ -6,7 +6,7 @@ class ProfileShow extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            cameraRoll: "false"
+            cameraRoll: localStorage.getItem("camera")
         }
         this.spliceEmail = this.spliceEmail.bind(this);
         this.cameraRollButton = this.cameraRollButton.bind(this);
@@ -38,11 +38,14 @@ class ProfileShow extends React.Component {
 
         if (currId === "no-camera-roll-cont") {
             document.getElementById("no-camera-roll-cont").id = "camera-roll-cont";
+            localStorage.setItem("camera", "true");
         }
     }
 
-    componentWillMount() {
-
+    componentDidMount() {
+        if (localStorage.getItem("camera") === "true") {
+            this.cameraRollButton();
+        }
     }
 
     render() {
