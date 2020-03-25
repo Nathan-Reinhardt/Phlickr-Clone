@@ -2,9 +2,17 @@
 
 // tabs bar //
 
-.logged-tabs-container, .tab-but-container, .profile-tabs-container
-.phlickr-pro-container, .wholeadvert-container {
+.logged-tabs-container, .tab-but-container, .profile-tabs-container,
+.wholeadvert-container {
     display: flex;
+}
+
+.phlickr-pro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .logged-tabs-container {
@@ -44,7 +52,7 @@
 
 // adverstisement on page //
 
-.wholeadvert-container, .phlickr-pro-container {
+.wholeadvert-container {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -56,10 +64,6 @@
     background-image: image-url('advertisement_flickr.jpeg');
     width: 970px;
     height: 250px;
-}
-
-.phlickr-pro-container {
-    margin-top: 5px;
 }
 
 .phlickr-pro-message {

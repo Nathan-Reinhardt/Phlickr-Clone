@@ -71,6 +71,11 @@ const ProfileShow = (props) => {
                     <button className="camera-roll-but">Camera Roll</button>
                 </div>
             </div>
+            <div className="">
+                <div id="no-camera-roll-cont">
+
+                </div>
+            </div>
         </div>
     ) : (
         null
