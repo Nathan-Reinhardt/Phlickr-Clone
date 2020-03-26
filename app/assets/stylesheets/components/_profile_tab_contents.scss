@@ -1,9 +1,40 @@
 // all profile tab conetent styling //
 
-#no-camera-roll-cont {
-    display: none;
+// photostream css //  photo stream containers //
+
+.photostream-top-bar, .photostream-dropdown-cont, .ps-date-uploaded-cont,
+.ps-public-view-cont {
+    display: flex;
 }
 
-#camera-roll-cont {
-    
+.photostream-top-bar {
+    justify-content: space-between;
+    margin-top: 0.1vh;
+}
+
+.photostream-dropdown-cont {
+    margin-left: 10vw;
+}
+
+.ps-public-view-cont {
+    margin-left: 35px;
+}
+
+.date-uploaded, .public-view, .dropdown-arrow {
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(115, 123, 128);
+}
+
+.arrow-cont {
+    margin-top: -4px;
+}
+
+.dropdown-arrow {
+    font-size: 17px;
+    margin-left: 6px;
+}
+
+.date-uploaded:hover, .public-view:hover, .dropdown-arrow:hover {
+    cursor: pointer;
 }

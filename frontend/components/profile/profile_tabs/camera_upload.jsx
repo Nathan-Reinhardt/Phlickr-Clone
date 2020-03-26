@@ -1,5 +1,6 @@
 import React from 'react';
 import LogoDetailBarContainer from '../../navbar/logo_bar_container';
+import { Link } from 'react-router-dom';
 
 class CameraUpload extends React.Component {
     
@@ -9,7 +10,6 @@ class CameraUpload extends React.Component {
             cameraRoll: localStorage.getItem("camera")
         }
         this.spliceEmail = this.spliceEmail.bind(this);
-        this.cameraRollButton = this.cameraRollButton.bind(this);
     }
 
     spliceEmail() {
@@ -30,21 +30,6 @@ class CameraUpload extends React.Component {
                 result += letter
                 count++;
             }
-        }
-    }
-
-    cameraRollButton() {
-        let currId = document.getElementById("no-camera-roll-cont").id;
-
-        if (currId === "no-camera-roll-cont") {
-            document.getElementById("no-camera-roll-cont").id = "camera-roll-cont";
-            localStorage.setItem("camera", "true");
-        }
-    }
-
-    componentDidMount() {
-        if (localStorage.getItem("camera") === "true") {
-            this.cameraRollButton();
         }
     }
 
@@ -97,7 +82,7 @@ class CameraUpload extends React.Component {
                     </div>
                 </div>
                 <div className="">
-                    <div id="no-camera-roll-cont">
+                    <div className="">
                         <h1 className="">I</h1>
                         <h3 className="">am</h3>
                         <h3 className="">jesus</h3>

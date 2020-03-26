@@ -1,5 +1,6 @@
 import React from 'react';
 import LogoDetailBarContainer from '../navbar/logo_bar_container';
+import { Link } from 'react-router-dom';
 
 class ProfileShow extends React.Component {
     
@@ -9,7 +10,6 @@ class ProfileShow extends React.Component {
             cameraRoll: localStorage.getItem("camera")
         }
         this.spliceEmail = this.spliceEmail.bind(this);
-        this.cameraRollButton = this.cameraRollButton.bind(this);
     }
 
     spliceEmail() {
@@ -30,21 +30,6 @@ class ProfileShow extends React.Component {
                 result += letter
                 count++;
             }
-        }
-    }
-
-    cameraRollButton() {
-        let currId = document.getElementById("no-camera-roll-cont").id;
-
-        if (currId === "no-camera-roll-cont") {
-            document.getElementById("no-camera-roll-cont").id = "camera-roll-cont";
-            localStorage.setItem("camera", "true");
-        }
-    }
-
-    componentDidMount() {
-        if (localStorage.getItem("camera") === "true") {
-            this.cameraRollButton();
         }
     }
 
@@ -87,21 +72,44 @@ class ProfileShow extends React.Component {
                 <div className="logged-tabs-container">
                     <div className="profile-tabs-container">
                         <button className="about-but">About</button>
-                        <button className="photostream-but">Photostream</button>
+                        <Link className="photostream-but-b" to={`/photos/${this.props.currentUser.id}`}>Photostream</Link>
                         <button className="albums-but">Albums</button>
                         <button className="faves-but">Faves</button>
                         <button className="gallery-but">Galleries</button>
                         <button className="profile-groups-but">Groups</button>
                         <button className="stats-but">Stats</button>
-                        <button className="camera-roll-but" onClick={this.cameraRollButton}>Camera Roll</button>
+                        <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div id="no-camera-roll-cont">
+                <div className="photostream-main-cont">
+                    <div className="photostream-top-bar">
+                        <div className="photostream-dropdown-cont">
+                            <div className="ps-date-uploaded-cont">
+                                <h3 className="date-uploaded">
+                                    Date uploaded
+                                </h3>
+                                <div className="arrow-cont">
+                                    <h3 className="dropdown-arrow">&#x25BE;</h3>
+                                </div>
+                            </div>
+                            <div className="ps-public-view-cont">
+                                <h3 className="public-view">
+                                    Public view
+                                </h3>
+                                <div className="arrow-cont">
+                                    <h3 className="dropdown-arrow">&#x25BE;</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="photostream-share-cont">
+
+                        </div>
+                    </div>
+                    <div className="">
                         <h1 className="">I</h1>
                         <h3 className="">am</h3>
                         <h3 className="">jesus</h3>
-                        <input className="camera-photo-input" type="file"/>
+                        <input className="" type="file"/>
                     </div>
                 </div>
             </div>

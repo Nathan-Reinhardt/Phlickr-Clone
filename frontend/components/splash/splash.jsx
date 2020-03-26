@@ -20,10 +20,6 @@ class Splash extends React.Component {
             .then( () => this.props.history.push[`/`]);
     }
 
-    componentDidMount() {
-        localStorage.setItem("camera", "false");
-    }
-
     render() {
         const display = this.props.currentUser ? (
             <div className="logged-back-ground">

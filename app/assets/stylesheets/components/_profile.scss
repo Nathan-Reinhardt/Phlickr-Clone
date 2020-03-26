@@ -72,9 +72,12 @@
 // buttons on tab bar //
 
 .about-but, .photostream-but, .albums-but, .faves-but,
-.gallery-but, .profile-groups-but, .stats-but, .camera-roll-but {
+.gallery-but, .profile-groups-but, .stats-but, .camera-roll-but,
+.about-but-b, .photostream-but-b, .albums-but-b, .faves-but-b,
+.gallery-but-b, .profile-groups-but-b, .stats-but-b, .camera-roll-but-b {
     color: rgb(84, 84, 84);
     border-bottom: 3px solid transparent;
+    text-decoration: none;
     height: 43px;
     font-size: 15.7px;
     transition: 0.2s;
@@ -82,38 +85,53 @@
     margin-left: 0.6vw;
 }
 
-.about-but {
+.about-but-b, .photostream-but-b, .albums-but-b, .faves-but-b,
+.gallery-but-b, .profile-groups-but-b, .stats-but-b, .camera-roll-but-b {
+    color: black;
+    border-bottom: 3px solid rgb(50, 145, 220);
+}
+
+.about-but, .about-but-b {
     width: 80px;
     margin-left: 0vw;
 }
 
-.photostream-but {
+.photostream-but, .photostream-but-b {
     font-size: 15.5px;
-    width: 133px;
+    margin-left: 0.7vw;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    height: 20px;
+    width: 109px;
 }
 
-.albums-but {
+.albums-but, .albums-but-b {
     width: 92px;
 }
 
-.faves-but {
+.faves-but, .faves-but-b {
     width: 85px;
 }
 
-.gallery-but {
+.gallery-but, .gallery-but-b {
     width: 100px;
 }
 
-.profile-groups-but {
+.profile-groups-but, .profile-groups-but-b {
     width: 95px;
 }
 
-.stats-but {
+.stats-but, .stats-but-b {
     width: 75px;
 }
 
-.camera-roll-but {
-    width: 130px;
+.camera-roll-but, .camera-roll-but-b {
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    height: 20px;
+    width: 110px;
 }
 
 // hover effects //
