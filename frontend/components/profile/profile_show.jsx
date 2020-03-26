@@ -102,14 +102,28 @@ class ProfileShow extends React.Component {
                             </div>
                         </div>
                         <div className="photostream-share-cont">
-
+                            <h1 className="share-arrow">.</h1>
                         </div>
                     </div>
-                    <div className="">
-                        <h1 className="">I</h1>
-                        <h3 className="">am</h3>
-                        <h3 className="">jesus</h3>
-                        <input className="" type="file"/>
+                    <div className="photostream-content-cont">
+                        <div className="ps-content">
+                            <div className="no-public-photos-cont">
+                                <h2 className="no-public-photos">You have no public photos.</h2>   
+                            </div>
+                            <div className="ps-info-cont">
+                                <h3 className="ps-info">
+                                    Your photostream is your public-facing portfolio. Set your photos to public using the Camera Roll to
+                                </h3>
+                            </div>
+                            <div className="ps-info-two-cont">
+                                <h3 className="ps-info-two">populate your photostream.</h3> 
+                            </div>
+                            <div className="camera-upload-link-cont">
+                                <Link className="to-camera-upload-link">
+                                    Go to Camera Roll
+                                </Link> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

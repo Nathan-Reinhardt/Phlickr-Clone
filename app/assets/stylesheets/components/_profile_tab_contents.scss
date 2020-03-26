@@ -3,8 +3,15 @@
 // photostream css //  photo stream containers //
 
 .photostream-top-bar, .photostream-dropdown-cont, .ps-date-uploaded-cont,
-.ps-public-view-cont {
+.ps-public-view-cont, .photostream-content-cont, .no-public-photos-cont,
+.ps-info-cont, .ps-info-two-cont, .camera-upload-link-cont {
     display: flex;
+}
+
+.photostream-content-cont, .no-public-photos-cont, .ps-info-cont, 
+.ps-info-two-cont, .camera-upload-link-cont {
+    justify-content: center;
+    width: 100%;
 }
 
 .photostream-top-bar {
@@ -19,6 +26,8 @@
 .ps-public-view-cont {
     margin-left: 35px;
 }
+
+// photostream top bar //
 
 .date-uploaded, .public-view, .dropdown-arrow {
     font-size: 15px;
@@ -35,6 +44,52 @@
     margin-left: 6px;
 }
 
-.date-uploaded:hover, .public-view:hover, .dropdown-arrow:hover {
+.photostream-share-cont {
+    margin-right: 10vw;
+    margin-top: 1.7vh;
+}
+
+.share-arrow {
+    background-image: image-url('sharearrow.jpeg');
+    color: transparent;
+    width: 23px;
+    height: 23px;
+}
+
+.date-uploaded:hover, .public-view:hover, .dropdown-arrow:hover, .share-arrow:hover {
     cursor: pointer;
+}
+
+// photostream main content //
+
+.ps-content {
+    margin-top: 24px;
+}
+
+.ps-info-cont {
+    margin-top: 7px;
+}
+
+.ps-info-two-cont {
+    margin-top: -26px;
+}
+
+.no-public-photos {
+    font-size: 23px;
+    font-weight: lighter;
+    color: rbg(32, 33, 35);
+}
+
+.ps-info, .ps-info-two {
+    font-size: 15.7px;
+    font-weight: normal;
+    color: rbg(64, 65, 66);
+}
+
+.camera-upload-link-cont {
+
+}
+
+.to-camera-upload-link {
+    
 }
