@@ -9,7 +9,7 @@ const LogoDetailBar = (props) => {
                 <Link className="detail-title" to="/">
                     phlickr
                 </Link>
-                <Link className="profile-link" to={`/people/${props.currentUser}`}>
+                <Link className="profile-link" to={`/photos/${props.currentUser.id}`}>
                     You
                 </Link>
                 <h1 className="explore-logged">Explore</h1>
