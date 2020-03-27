@@ -119,7 +119,7 @@ class ProfileShow extends React.Component {
                                 <h3 className="ps-info-two">populate your photostream.</h3> 
                             </div>
                             <div className="camera-upload-link-cont">
-                                <Link className="to-camera-upload-link">
+                                <Link className="to-camera-upload-link" to="/cameraroll">
                                     Go to Camera Roll
                                 </Link> 
                             </div>
