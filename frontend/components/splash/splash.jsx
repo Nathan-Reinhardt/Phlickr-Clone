@@ -31,15 +31,33 @@ class Splash extends React.Component {
     }
 
     activityButton() {
-        
+        document.getElementById("all-activity-but").classList.remove("allActivityGray");
+        document.getElementById("people-but").classList.remove("peopleBlue");
+        document.getElementById("groups-but").classList.remove("groupsBlue");
+
+        document.getElementById("all-activity-but").classList.add("allActivityBlue");
+        document.getElementById("people-but").classList.add("peopleGray");
+        document.getElementById("groups-but").classList.add("groupsGray");
     }
 
     peopleButton() {
-        
+        document.getElementById("all-activity-but").classList.remove("allActivityBlue");
+        document.getElementById("people-but").classList.remove("peopleGray");
+        document.getElementById("groups-but").classList.remove("groupsBlue");
+
+        document.getElementById("all-activity-but").classList.add("allActivityGray");
+        document.getElementById("people-but").classList.add("peopleBlue");
+        document.getElementById("groups-but").classList.add("groupsGray");
     }
 
     groupsButton() {
-        
+        document.getElementById("all-activity-but").classList.remove("allActivityBlue");
+        document.getElementById("people-but").classList.remove("peopleBlue");
+        document.getElementById("groups-but").classList.remove("groupsGray");
+
+        document.getElementById("all-activity-but").classList.add("allActivityGray");
+        document.getElementById("people-but").classList.add("peopleGray");
+        document.getElementById("groups-but").classList.add("groupsBlue");
     }
 
     render() {
@@ -49,13 +67,22 @@ class Splash extends React.Component {
                 <div className="root-tab-content">
                     <div className="logged-tabs-container">
                         <div className="tab-but-container">
-                            <button className={this.state.activity} onClick={this.activityButton}>
+                            <button id="all-activity-but" className="allActivityBlue" onClick={(e) => {
+                                e.preventDefault();
+                                this.activityButton();
+                            }}>
                                 All Activity
                             </button>
-                            <button className={this.state.people} onClick={this.peopleButton}>
+                            <button id="people-but" className="peopleGray" onClick={(e) => {
+                                e.preventDefault();
+                                this.peopleButton();
+                            }}>
                                 People
                             </button>
-                            <button className={this.state.groups} onClick={this.groupsButton}>
+                            <button id="groups-but" className="groupsGray" onClick={(e) => {
+                                e.preventDefault();
+                                this.groupsButton();
+                            }}>
                                 Groups
                             </button>
                         </div>

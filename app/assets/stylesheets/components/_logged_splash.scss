@@ -26,10 +26,8 @@
     margin-left: 10vw;
 }
 
-.all-activity-but, .people-but, .groups-but,
-.all-activity-but-blue, .people-but-blue, .groups-but-blue {
-    color: rgb(84, 84, 84);
-    border-bottom: 3px solid transparent;
+.allActivityGray, .peopleGray, .groupsGray,
+.allActivityBlue, .peopleBlue, .groupsBlue {
     height: 44px;
     width: 90px;
     font-size: 15px;
@@ -37,21 +35,26 @@
     margin-top: 3px;
 }
 
-.all-activity-but-blue, .people-but-blue, .groups-but-blue {
+.allActivityGray, .peopleGray, .groupsGray {
+    color: rgb(84, 84, 84);
+    border-bottom: 3px solid transparent;
+}
+
+.allActivityBlue, .peopleBlue, .groupsBlue {
     color: black;
     border-bottom: 3px solid rgb(50, 145, 220);
 }
 
-.all-activity-but, .all-activity-but-blue {
+.allActivityGray, .allActivityBlue {
     width: 113px;
     font-size: 15.5px;
 }
 
-.people-but, .groups-but, .people-but-blue, .groups-but-blue {
+.peopleGray, .groupsGray, .peopleBlue, .groupsBlue {
     margin-left: 10px;
 }
 
-.all-activity-but:hover, .people-but:hover, .groups-but:hover {
+.allActivityGray:hover, .peopleGray:hover, .groupsGray:hover {
     cursor: pointer;
     color: black;
     border-bottom: 3px solid rgb(50, 145, 220);
