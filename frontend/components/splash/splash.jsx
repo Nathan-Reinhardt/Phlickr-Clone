@@ -7,7 +7,17 @@ class Splash extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            activity: "all-activity-but",
+            people: "people-but",
+            groups: "groups-but",
+        }
+
         this.demoUser = this.demoUser.bind(this);
+        this.activityButton = this.activityButton.bind(this);
+        this.peopleButton = this.peopleButton.bind(this);
+        this.groupsButton = this.groupsButton.bind(this);
     }
 
     demoUser(e) {
@@ -20,6 +30,18 @@ class Splash extends React.Component {
             .then( () => this.props.history.push[`/`]);
     }
 
+    activityButton() {
+        
+    }
+
+    peopleButton() {
+        
+    }
+
+    groupsButton() {
+        
+    }
+
     render() {
         const display = this.props.currentUser ? (
             <div className="logged-back-ground">
@@ -27,9 +49,15 @@ class Splash extends React.Component {
                 <div className="root-tab-content">
                     <div className="logged-tabs-container">
                         <div className="tab-but-container">
-                            <button className="all-activity-but">All Activity</button>
-                            <button className="people-but">People</button>
-                            <button className="groups-but">Groups</button>
+                            <button className={this.state.activity} onClick={this.activityButton}>
+                                All Activity
+                            </button>
+                            <button className={this.state.people} onClick={this.peopleButton}>
+                                People
+                            </button>
+                            <button className={this.state.groups} onClick={this.groupsButton}>
+                                Groups
+                            </button>
                         </div>
                     </div>
                 </div>

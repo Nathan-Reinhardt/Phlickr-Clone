@@ -23,24 +23,31 @@
 }
 
 .tab-but-container {
-    margin-left: 10.2vw;
+    margin-left: 10vw;
 }
 
-.all-activity-but, .people-but, .groups-but {
+.all-activity-but, .people-but, .groups-but,
+.all-activity-but-blue, .people-but-blue, .groups-but-blue {
     color: rgb(84, 84, 84);
     border-bottom: 3px solid transparent;
-    height: 43px;
+    height: 44px;
     width: 90px;
     font-size: 15px;
     transition: 0.2s;
     margin-top: 3px;
 }
 
-.all-activity-but {
-    width: 110px;
+.all-activity-but-blue, .people-but-blue, .groups-but-blue {
+    color: black;
+    border-bottom: 3px solid rgb(50, 145, 220);
 }
 
-.people-but, .groups-but {
+.all-activity-but, .all-activity-but-blue {
+    width: 113px;
+    font-size: 15.5px;
+}
+
+.people-but, .groups-but, .people-but-blue, .groups-but-blue {
     margin-left: 10px;
 }
 
