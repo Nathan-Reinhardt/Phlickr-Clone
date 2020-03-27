@@ -74,23 +74,23 @@
     margin-top: -26px;
 }
 
-.no-public-photos {
+.no-public-photos, .lot-of-photos {
     font-size: 23px;
     font-weight: lighter;
-    color: rbg(32, 33, 35);
+    color: rgb(32, 33, 35);
 }
 
-.ps-info, .ps-info-two {
+.ps-info, .ps-info-two, .you-drag-drop, .or-tag {
     font-size: 15.7px;
     font-weight: normal;
-    color: rbg(104, 105, 106);
+    color: rgb(64, 65, 66);
 }
 
 .camera-upload-link-cont {
     margin-top: 3px;
 }
 
-.to-camera-upload-link {
+.to-camera-upload-link, .select-files-span {
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -98,41 +98,51 @@
     border-radius: 3px;
     font-size: 15px;
     padding-left: 20px;
-    padding-right: 15px;
     padding-top: 9px;
+}
+
+.to-camera-upload-link {
+    padding-right: 15px;
     padding-bottom: 12px;
     width: 135px;
     height: 15px;
 }
 
-.to-camera-upload-link:hover {
+.to-camera-upload-link:hover, .select-files-span:hover {
+    cursor: pointer;
     background-color: rgb(45, 148, 233);
 }
 
 // camera roll css // camera roll containers //
 
 .camera-roll-main-cont, .lot-of-photos-cont, .you-drag-drop-cont, 
-.or-tag-cont, .camera-photo-input-cont {
+.or-tag-cont {
     display: flex;
     justify-content: center;
 }
 
 .cr-content {
-    margin-top: 2vh;
+    margin-top: 75px;
 }
 
-.lot-of-photos {
-
+.you-drag-drop-cont {
+    margin-top: 6.5px;
 }
 
-.you-drag-drop {
-
+.or-tag-cont {
+    margin-top: -10px;
 }
 
-.or-tag {
-
+.camera-photo-input-cont {
+    margin-left: 9.4vw;
+    margin-top: 13px;
 }
 
 .camera-photo-input {
+    display: none;
+}
 
+.select-files-span {
+    padding-right: 20px;
+    padding-bottom: 10px;
 }

@@ -94,7 +94,10 @@ class CameraUpload extends React.Component {
                             <h3 className="or-tag">or</h3>
                         </div>
                         <div className="camera-photo-input-cont">
-                            <input className="camera-photo-input" type="file"/>
+                            <label>
+                                <input className="camera-photo-input" type="file"/>
+                                <span className="select-files-span">Select files to upload</span>
+                            </label>
                         </div>
                     </div>
                 </div>
