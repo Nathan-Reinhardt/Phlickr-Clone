@@ -59,9 +59,6 @@ class CameraUpload extends React.Component {
                                 </h1>
                             </div>
                             <div className="photo-joined-container">
-                                <h1 className="photo-upload-amount">
-                                    0 Photos
-                                </h1>
                                 <h1 className="joined-date">
                                     Joined 2020
                                 </h1>
@@ -72,21 +69,33 @@ class CameraUpload extends React.Component {
                 <div className="logged-tabs-container">
                     <div className="profile-tabs-container">
                         <button className="about-but">About</button>
-                        <button className="photostream-but">Photostream</button>
+                        <Link className="photostream-but" to={`/photos/${this.props.currentUser.id}`}>Photostream</Link>
                         <button className="albums-but">Albums</button>
                         <button className="faves-but">Faves</button>
                         <button className="gallery-but">Galleries</button>
                         <button className="profile-groups-but">Groups</button>
                         <button className="stats-but">Stats</button>
-                        <button className="camera-roll-but" onClick={this.cameraRollButton}>Camera Roll</button>
+                        <Link className="camera-roll-but-b" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div className="">
-                        <h1 className="">I</h1>
-                        <h3 className="">am</h3>
-                        <h3 className="">jesus</h3>
-                        <input className="camera-photo-input" type="file"/>
+                <div className="camera-roll-main-cont">
+                    <div className="cr-content">
+                        <div className="lot-of-photos-cont">
+                            <h1 className="lot-of-photos">
+                                Got a lot of photos? We've got a lot of space.
+                            </h1>
+                        </div>
+                        <div className="you-drag-drop-cont">
+                            <h3 className="you-drag-drop">
+                                You can drag and drop photos anywhere on this page
+                            </h3> 
+                        </div>
+                        <div className="or-tag-cont">
+                            <h3 className="or-tag">or</h3>
+                        </div>
+                        <div className="camera-photo-input-cont">
+                            <input className="camera-photo-input" type="file"/>
+                        </div>
                     </div>
                 </div>
             </div>
