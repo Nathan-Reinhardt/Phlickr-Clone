@@ -121,6 +121,8 @@
     justify-content: center;
 }
 
+// camera roll content //
+
 .cr-content {
     margin-top: 75px;
 }
@@ -149,3 +151,17 @@
 
 // stats tab css // stats tab containers //
 
+.stats-pro-cont, .phlickr-pro-image-cont, .sp-cont-1, 
+.sp-cont-2, .sp-cont-3, .learn-more-pro-cont {
+    display: flex;
+    justify-content: center;
+}
+
+// stats content //
+
+.phlickr-pro-image {
+    background-image: image-url('phlickrpro.jpeg');
+    color: transparent;
+    width: 120px;
+    height: 130px;
+}

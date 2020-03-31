@@ -35,7 +35,7 @@ class StatsTab extends React.Component {
 
     render() {
         const display = this.props.currentUser ? (
-            <div className="profile-page-container">
+            <div className="stats-page-container">
                 <div className="profile-cover">
                     <div className="profile-contents">
                         <div>
@@ -78,9 +78,29 @@ class StatsTab extends React.Component {
                         <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div className="">
-                        
+                <div className="stats-pro-cont">
+                    <div className="stats-content-cont">
+                        <div className="phlickr-pro-image-cont">
+                            <h1 className="phlickr-pro-image">.</h1>
+                        </div>
+                        <div className="sp-cont-1">
+                            <h2 className="sp-info-1">Introducing all the new stats for Pro</h2>
+                        </div>
+                        <div className="sp-cont-2">
+                            <h3>
+                                Gain an understanding of how people are discovering your Flickr photos. See which of your photos
+                            </h3>
+                        </div>
+                        <div className="sp-cont-3">
+                            <h3>
+                                are trending now and which have performed the best over the life of your Flickr account.
+                            </h3>
+                        </div>
+                        <div className="learn-more-pro-cont">
+                            <Link className="learn-more-pro-link">
+                                Learn more about Pro
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,7 +109,7 @@ class StatsTab extends React.Component {
         );
 
         return (
-            <div className="profile-page-container">
+            <div className="stats-page-container">
                 <LogoDetailBarContainer />
                 {display}
             </div>
