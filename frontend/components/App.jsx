@@ -6,6 +6,7 @@ import LoginFormContainer from "./session/login_form_container";
 import PhotosIndexContainer from "./photos/photos_index_container";
 import ProfileShowContainer from "./profile/profile_show_container";
 import CameraUploadContainer from "./profile/profile_tabs/camera_upload_container";
+import StatsTabContainer from "./profile/profile_tabs/stats_tab_container";
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import { Route, Switch } from "react-router-dom";
@@ -19,6 +20,7 @@ const App = () => (
       <ProtectedRoute exact={true} path="/photos" component={PhotosIndexContainer} />
       <ProtectedRoute path="/photos/:userId" component={ProfileShowContainer} />
       <ProtectedRoute path="/cameraroll" component={CameraUploadContainer} />
+      <ProtectedRoute path="/photos/:userId/stats" component={StatsTabContainer} />
     </Switch>
   </div>
 );
