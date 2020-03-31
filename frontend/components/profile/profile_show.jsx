@@ -1,36 +1,12 @@
 import React from 'react';
 import LogoDetailBarContainer from '../navbar/logo_bar_container';
 import { Link } from 'react-router-dom';
+import { spliceEmail } from '../../../app/assets/javascripts/functions';
 
 class ProfileShow extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = {
-            cameraRoll: localStorage.getItem("camera")
-        }
-        this.spliceEmail = this.spliceEmail.bind(this);
-    }
-
-    spliceEmail() {
-        let email = this.props.currentUser.email;
-        let result = "";
-        let letter = "";
-        let count = 0;
-        for (let i = 0; i < email.length; i++) {
-            letter = email[i];
-            if (letter === "@") {
-                return result;
-            }
-            else if (count === 28) {
-                result += "...";
-                return result;
-            }
-            else {
-                result += letter
-                count++;
-            }
-        }
     }
 
     render() {
@@ -46,7 +22,7 @@ class ProfileShow extends React.Component {
                         <div className="full-content-container">
                             <div className="email-follow-container">
                                 <h1 className="short-email">
-                                    {this.spliceEmail()}
+                                    {spliceEmail(this.props.currentUser.email)}
                                 </h1>
                                 <h1 className="followers-count">
                                     0 Followers
