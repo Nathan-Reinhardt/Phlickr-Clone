@@ -74,13 +74,14 @@
     margin-top: -26px;
 }
 
-.no-public-photos, .lot-of-photos {
+.no-public-photos, .lot-of-photos, .sp-info-1 {
     font-size: 23px;
     font-weight: lighter;
     color: rgb(32, 33, 35);
 }
 
-.ps-info, .ps-info-two, .you-drag-drop, .or-tag {
+.ps-info, .ps-info-two, .you-drag-drop, .or-tag,
+.sp-info-2, .sp-info-3 {
     font-size: 15.7px;
     font-weight: normal;
     color: rgb(64, 65, 66);
@@ -90,7 +91,7 @@
     margin-top: 3px;
 }
 
-.to-camera-upload-link, .select-files-span {
+.to-camera-upload-link, .select-files-span, .learn-more-pro-link {
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -108,7 +109,8 @@
     height: 15px;
 }
 
-.to-camera-upload-link:hover, .select-files-span:hover {
+.to-camera-upload-link:hover, .select-files-span:hover,
+.learn-more-pro-link:hover {
     cursor: pointer;
     background-color: rgb(45, 148, 233);
 }
@@ -155,13 +157,45 @@
 .sp-cont-2, .sp-cont-3, .learn-more-pro-cont {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 // stats content //
+
+.stats-content-cont {
+    margin-top: 53px;
+}
+
+.phlickr-pro-image {
+    margin-left: 0.3vw;
+}
 
 .phlickr-pro-image {
     background-image: image-url('phlickrpro.jpeg');
     color: transparent;
     width: 120px;
     height: 130px;
+}
+
+.sp-cont-1 {
+    margin-top: 17px;
+}
+
+.sp-cont-2 {
+    margin-top: 6px;
+}
+
+.sp-cont-3 {
+    margin-top: -25px;
+}
+
+.learn-more-pro-cont {
+    margin-top: 3px;
+}
+
+.learn-more-pro-link {
+    padding-right: 16px;
+    padding-bottom: 12px;
+    width: 160px;
+    height: 15px;
 }

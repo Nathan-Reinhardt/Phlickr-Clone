@@ -84,15 +84,15 @@ class StatsTab extends React.Component {
                             <h1 className="phlickr-pro-image">.</h1>
                         </div>
                         <div className="sp-cont-1">
-                            <h2 className="sp-info-1">Introducing all the new stats for Pro</h2>
+                            <h2 className="sp-info-1">Introducing all new stats for Pro</h2>
                         </div>
                         <div className="sp-cont-2">
-                            <h3>
+                            <h3 className="sp-info-2">
                                 Gain an understanding of how people are discovering your Flickr photos. See which of your photos
                             </h3>
                         </div>
                         <div className="sp-cont-3">
-                            <h3>
+                            <h3 className="sp-info-3">
                                 are trending now and which have performed the best over the life of your Flickr account.
                             </h3>
                         </div>
