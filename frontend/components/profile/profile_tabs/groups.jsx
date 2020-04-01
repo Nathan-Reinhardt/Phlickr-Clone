@@ -3,7 +3,7 @@ import LogoDetailBarContainer from '../../navbar/logo_bar_container';
 import { Link } from 'react-router-dom';
 import { spliceEmail } from '../../../../app/assets/javascripts/functions';
 
-class CameraUpload extends React.Component {
+class Groups extends React.Component {
     
     constructor(props) {
         super(props);
@@ -49,32 +49,14 @@ class CameraUpload extends React.Component {
                         <button className="albums-but">Albums</button>
                         <button className="faves-but">Faves</button>
                         <button className="gallery-but">Galleries</button>
-                        <Link className="profile-groups-but" to="/groups">Groups</Link>
+                        <Link className="profile-groups-but-b" to="/groups">Groups</Link>
                         <Link className="stats-but" to={`/photos/${this.props.currentUser.id}/stats`}>Stats</Link>
-                        <Link className="camera-roll-but-b" to="/cameraroll">Camera Roll</Link>
+                        <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="camera-roll-main-cont">
-                    <div className="cr-content">
-                        <div className="lot-of-photos-cont">
-                            <h1 className="lot-of-photos">
-                                Got a lot of photos? We've got a lot of space.
-                            </h1>
-                        </div>
-                        <div className="you-drag-drop-cont">
-                            <h3 className="you-drag-drop">
-                                You can drag and drop photos anywhere on this page
-                            </h3> 
-                        </div>
-                        <div className="or-tag-cont">
-                            <h3 className="or-tag">or</h3>
-                        </div>
-                        <div className="camera-photo-input-cont">
-                            <label>
-                                <input className="camera-photo-input" type="file"/>
-                                <span className="select-files-span">Select files to upload</span>
-                            </label>
-                        </div>
+                <div className="">
+                    <div className="">
+                        
                     </div>
                 </div>
             </div>
@@ -91,4 +73,4 @@ class CameraUpload extends React.Component {
     }
 }
 
-export default CameraUpload;
+export default Groups;

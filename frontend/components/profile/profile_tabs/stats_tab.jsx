@@ -49,7 +49,7 @@ class StatsTab extends React.Component {
                         <button className="albums-but">Albums</button>
                         <button className="faves-but">Faves</button>
                         <button className="gallery-but">Galleries</button>
-                        <button className="profile-groups-but">Groups</button>
+                        <Link className="profile-groups-but" to="/groups">Groups</Link>
                         <Link className="stats-but-b" to={`/photos/${this.props.currentUser.id}/stats`}>Stats</Link>
                         <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
