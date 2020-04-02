@@ -91,7 +91,8 @@
     margin-top: 3px;
 }
 
-.to-camera-upload-link, .select-files-span, .learn-more-pro-link {
+.to-camera-upload-link, .select-files-span, 
+.learn-more-pro-link {
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -110,7 +111,7 @@
 }
 
 .to-camera-upload-link:hover, .select-files-span:hover,
-.learn-more-pro-link:hover {
+.learn-more-pro-link:hover, .create-groups-but:hover {
     cursor: pointer;
     background-color: rgb(45, 148, 233);
 }
@@ -198,4 +199,57 @@
     padding-bottom: 12px;
     width: 160px;
     height: 15px;
+}
+
+// groups tab css // groups containers //
+
+.groups-main-cont, .groups-main-content, .groups-info-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.gps-cont {
+    margin-top: 26px;
+}
+
+.groups-main-content {
+    margin-left: 59.4vw;
+}
+
+.groups-info-cont {
+    margin-top: 32px;
+}
+
+// groups tab content //
+
+.rec-dis-link {
+    font-size: 15.5px;
+    color: rgb(59, 129, 183)
+}
+
+.create-groups-but {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(49, 144, 220);
+    border-radius: 3px;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-right: 1px;
+    padding-left: 1px;
+    width: 135px;
+    height: 15px;
+    margin-left: 23.3px;
+    margin-top: -6px;
+}
+
+.groups-info-1 {
+    font-size: 17.5px;
+    font-weight: normal;
+    color: rgb(64, 65, 66);
+}
+
+.rec-dis-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }

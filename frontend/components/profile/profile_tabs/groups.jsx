@@ -54,9 +54,17 @@ class Groups extends React.Component {
                         <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div className="">
-                        
+                <div className="groups-main-cont">
+                    <div className="gps-cont">
+                        <div className="groups-main-content">
+                            <h1 className="rec-dis-link">Recent Discussions</h1>
+                            <button className="create-groups-but">Create Group</button>
+                        </div>
+                        <div className="groups-info-cont">
+                            <h2 className="groups-info-1">
+                                Phlickr groups are a great way to share photos, post comments, and hold discussions around a common theme.
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
