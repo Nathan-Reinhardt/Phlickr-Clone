@@ -48,7 +48,7 @@ class CameraUpload extends React.Component {
                         <Link className="photostream-but" to={`/photos/${this.props.currentUser.id}`}>Photostream</Link>
                         <button className="albums-but">Albums</button>
                         <button className="faves-but">Faves</button>
-                        <button className="gallery-but">Galleries</button>
+                        <Link className="gallery-but" to={`/photos/${this.props.currentUser.id}/galleries`}>Galleries</Link>
                         <Link className="profile-groups-but" to="/groups">Groups</Link>
                         <Link className="stats-but" to={`/photos/${this.props.currentUser.id}/stats`}>Stats</Link>
                         <Link className="camera-roll-but-b" to="/cameraroll">Camera Roll</Link>
