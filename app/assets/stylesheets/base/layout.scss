@@ -44,13 +44,20 @@
 	}
 }
 
-.logged-back-ground, .profile-page-container {
+.logged-back-ground, .profile-page-container, .below-page-container {
 	background-color: rgb(243, 245, 246);
+}
+
+.profile-page-container {
+	height: 42.3vh;
+}
+
+.below-page-container, .stats-page-container {
+	height: 75vh;
 }
 
 .stats-page-container {
 	background-color: rgb(231, 233, 232);
-	height: 100vh;
 }
 
 .back-ground-session {
