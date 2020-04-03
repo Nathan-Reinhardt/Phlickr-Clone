@@ -54,9 +54,24 @@ class Galleries extends React.Component {
                         <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div className="">
-                        
+                <div className="gallery-main-cont">
+                    <div className="gallery-content-cont">
+                        <div className="gallery-info-cont-1">
+                            <h1 className="gallery-info-1">Your gallery walls are looking pretty bare.</h1>
+                        </div>
+                        <div className="gallery-info-cont-2">
+                            <h3 className="gallery-info-2">
+                                Galleries are a way to showcase other photographers’ photos and videos. When you see something
+                            </h3>
+                        </div>
+                        <div className="gallery-info-cont-3">
+                            <h3 className="gallery-info-3">
+                                you love in Flickr, click the [+] icon to save it to a gallery.
+                            </h3>
+                        </div>
+                        <div className="gallery-but-cont">
+                            <button className="create-gallery-but">Create gallery</button>
+                        </div>
                     </div>
                 </div>
             </div>
