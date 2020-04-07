@@ -29,12 +29,12 @@ class Albums extends React.Component {
                             <h1 className="album-info-1">Let's make an album.</h1>
                         </div>
                         <div className="album-info-2-cont">
-                            <h3 className="album-info-1">
+                            <h3 className="album-info-2">
                                 Easily organize all your photos into beautiful albums to share with friends, family, or even other
                             </h3>
                         </div>
                         <div className="album-info-3-cont">
-                            <h3 className="album-info-1">Phlickr memebers.</h3>
+                            <h3 className="album-info-3">Phlickr memebers.</h3>
                         </div>
                         <div className="album-crb-cont">
                             <Link className="album-camera-roll-but" to="/cameraroll">Go to Camera Roll</Link>

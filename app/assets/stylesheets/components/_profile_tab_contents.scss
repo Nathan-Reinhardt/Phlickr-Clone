@@ -74,14 +74,15 @@
     margin-top: -26px;
 }
 
-.no-public-photos, .lot-of-photos, .sp-info-1, .gallery-info-1, .faves-info-1 {
+.no-public-photos, .lot-of-photos, .sp-info-1, .gallery-info-1, .faves-info-1,
+.album-info-1 {
     font-size: 23px;
     font-weight: lighter;
     color: rgb(32, 33, 35);
 }
 
 .ps-info, .ps-info-two, .you-drag-drop, .or-tag, .sp-info-2, .sp-info-3, 
-.gallery-info-2, .gallery-info-3, .faves-info-2 {
+.gallery-info-2, .gallery-info-3, .faves-info-2, .album-info-2, .album-info-3 {
     font-size: 15.7px;
     font-weight: normal;
     color: rgb(64, 65, 66);
@@ -113,7 +114,8 @@
 // hover effects for all similar buttons on every tab //
 
 .to-camera-upload-link:hover, .select-files-span:hover, .learn-more-pro-link:hover, 
-.create-groups-but:hover, .create-gallery-but:hover, .start-faves-but:hover {
+.create-groups-but:hover, .create-gallery-but:hover, .start-faves-but:hover,
+.album-camera-roll-but {
     cursor: pointer;
     background-color: rgb(45, 148, 233);
 }
@@ -208,7 +210,9 @@
 .groups-main-cont, .groups-main-content, .groups-info-cont,
 .gallery-main-cont, .gallery-info-cont-1, .gallery-info-cont-2,
 .gallery-info-cont-3, .gallery-but-cont, .faves-main-cont,
-.faves-info-1-cont, .faves-info-2-cont, .start-faves-but-cont {
+.faves-info-1-cont, .faves-info-2-cont, .start-faves-but-cont,
+.album-main-cont, .album-info-1-cont, .album-info-2-cont, 
+.album-info-3-cont, .album-crb-cont {
     display: flex;
     justify-content: center;
 }
@@ -232,7 +236,8 @@
     color: rgb(59, 129, 183)
 }
 
-.create-groups-but, .create-gallery-but, .start-faves-but {
+.create-groups-but, .create-gallery-but, 
+.start-faves-but, .album-camera-roll-but {
     color: white;
     font-weight: bold;
     background-color: rgb(49, 144, 220);
@@ -306,11 +311,42 @@
 }
 
 // faves tab content //
+
 .start-faves-but {
     padding-top: 9px;
     padding-bottom: 12px;
     padding-right: 3px;
     padding-left: 5px;
     width: 180px;
+    height: 15px;
+}
+
+// albums tab css // albums containers //
+
+.album-content-cont {
+    margin-top: 25px;
+}
+
+.album-info-2-cont {
+    margin-top: 6px;
+}
+
+.album-info-3-cont {
+    margin-top: -25px;
+}
+
+.album-crb-cont {
+    margin-top: 3px;
+}
+
+// albums tab content //
+
+.album-camera-roll-but {
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    padding-right: 10px;
+    padding-left: 20px;
+    width: 140px;
     height: 15px;
 }
