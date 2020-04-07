@@ -10,6 +10,7 @@ import StatsTabContainer from "./profile/profile_tabs/stats_tab_container";
 import GroupsContainer from "./profile/profile_tabs/groups_container";
 import GalleriesContainer from "./profile/profile_tabs/galleries_container";
 import FavesContainer from "./profile/profile_tabs/faves_tab_container";
+import AlbumsContainer from "./profile/profile_tabs/albums_container";
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
@@ -20,6 +21,7 @@ const App = () => (
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <ProtectedRoute exact={true} path="/photos/:userId" component={PhotostreamContainer} />
+      <ProtectedRoute exact={true} path="/photos/:userId/albums" component={AlbumsContainer} />
       <ProtectedRoute exact={true} path="/photos/:userId/favorites" component={FavesContainer} />
       <ProtectedRoute exact={true} path="/photos/:userId/galleries" component={GalleriesContainer} />
       <ProtectedRoute exact={true} path="/photos/:userId/stats" component={StatsTabContainer} />

@@ -15,7 +15,7 @@ class CameraUpload extends React.Component {
                     <div className="profile-tabs-container">
                         <button className="about-but">About</button>
                         <Link className="photostream-but" to={`/photos/${this.props.currentUser.id}`}>Photostream</Link>
-                        <button className="albums-but">Albums</button>
+                        <Link className="albums-but" to={`/photos/${this.props.currentUser.id}/albums`}>Albums</Link>
                         <Link className="faves-but" to={`/photos/${this.props.currentUser.id}/favorites`}>Faves</Link>
                         <Link className="gallery-but" to={`/photos/${this.props.currentUser.id}/galleries`}>Galleries</Link>
                         <Link className="profile-groups-but" to="/groups">Groups</Link>
