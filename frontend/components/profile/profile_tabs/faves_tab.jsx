@@ -23,9 +23,23 @@ class Faves extends React.Component {
                         <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div className="">
-                        
+                <div className="faves-main-cont">
+                    <div className="faves-content-cont">
+                        <div className="faves-info-1-cont">
+                            <h1 className="faves-info-1">
+                                Start picking your faves. Just click on the star.
+                            </h1>
+                        </div>
+                        <div className="faves-info-2-cont">
+                            <h3 className="faves-info-2">
+                                Like something you see? Let the photographer know by clicking on the star icon.
+                            </h3>
+                        </div>
+                        <div className="start-faves-but-cont">
+                            <button className="start-faves-but">
+                                Start exploring Phlickr
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
