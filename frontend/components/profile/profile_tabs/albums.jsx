@@ -13,7 +13,7 @@ class Albums extends React.Component {
             <div className="below-page-container">
                 <div className="logged-tabs-container">
                     <div className="profile-tabs-container">
-                        <button className="about-but">About</button>
+                        <Link className="about-but" to={`/people/${this.props.currentUser.id}`}>About</Link>
                         <Link className="photostream-but" to={`/photos/${this.props.currentUser.id}`}>Photostream</Link>
                         <Link className="albums-but-b" to={`/photos/${this.props.currentUser.id}/albums`}>Albums</Link>
                         <Link className="faves-but" to={`/photos/${this.props.currentUser.id}/favorites`}>Faves</Link>
