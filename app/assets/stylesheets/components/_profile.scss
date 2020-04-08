@@ -33,7 +33,7 @@
 }
 
 .profile-tabs-container {
-    margin-left: 10.1vw;
+    margin-left: 9.4vw;
 }
 
 // profile contents //
@@ -78,11 +78,12 @@
     color: rgb(84, 84, 84);
     border-bottom: 3px solid transparent;
     text-decoration: none;
-    height: 43px;
+    height: 20px;
     font-size: 15.7px;
     transition: 0.2s;
     margin-top: 3.9px;
-    margin-left: 0.6vw;
+    padding-top: 12px;
+    padding-bottom: 11px;
 }
 
 .about-but-b, .photostream-but-b, .albums-but-b, .faves-but-b,
@@ -92,73 +93,52 @@
 }
 
 .about-but, .about-but-b {
-    width: 80px;
-    margin-left: 0vw;
+    padding-left: 20px;
+    width: 62px;
 }
 
 .photostream-but, .photostream-but-b {
     font-size: 15.5px;
     margin-left: 0.7vw;
     padding-left: 20px;
-    padding-top: 12px;
-    padding-bottom: 11px;
-    height: 20px;
     width: 109px;
 }
 
 .albums-but, .albums-but-b {
-    padding-top: 12px;
-    padding-bottom: 11px;
     padding-left: 20px;
-    height: 20px;
     width: 73px;
-    margin-left: 0.75vw;
-}
-
-.faves-but, .faves-but-b {
-    padding-top: 12px;
-    padding-bottom: 11px;
-    padding-left: 20px;
-    height: 20px;
-    width: 62px;
-    margin-left: 0.85vw;
-}
-
-.gallery-but, .gallery-but-b {
-    padding-top: 12px;
-    padding-bottom: 11px;
-    padding-left: 20px;
-    height: 20px;
-    width: 82px;
     margin-left: 0.7vw;
 }
 
-.profile-groups-but, .profile-groups-but-b {
-    padding-top: 12px;
-    padding-bottom: 11px;
+.faves-but, .faves-but-b {
     padding-left: 20px;
-    height: 20px;
-    width: 72px;
-    margin-left: 0.8vw;
+    width: 61px;
+    margin-left: 0.7vw;
+}
+
+.gallery-but, .gallery-but-b {
+    padding-left: 20px;
+    width: 82px;
+    margin-left: 0.65vw;
+}
+
+.profile-groups-but, .profile-groups-but-b {
+    padding-left: 20px;
+    width: 71px;
+    margin-left: 0.7vw;
 }
 
 .stats-but, .stats-but-b {
-    padding-top: 12px;
-    padding-bottom: 11px;
     padding-left: 19px;
-    height: 20px;
     width: 56px;
     margin-left: 0.75vw;
 }
 
 .camera-roll-but, .camera-roll-but-b {
-    padding-top: 12px;
-    padding-bottom: 11px;
     padding-left: 18px;
     padding-right: 2px;
-    height: 20px;
     width: 104px;
-    margin-left: 0.75vw;
+    margin-left: 0.65vw;
 }
 
 // hover effects //
