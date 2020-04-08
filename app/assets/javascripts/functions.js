@@ -1,4 +1,4 @@
-const spliceEmail = (email) => {
+export const spliceEmail = (email) => {
     let result = "";
     let letter = "";
     let count = 0;
@@ -12,7 +12,7 @@ const spliceEmail = (email) => {
             return result;
         }
         else {
-            result += letter
+            result += letter;
             count++;
         }
     }
