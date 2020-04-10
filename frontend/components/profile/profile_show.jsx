@@ -1,11 +1,31 @@
 import React from 'react';
 import LogoDetailBarContainer from '../navbar/logo_bar_container';
-import { spliceEmail } from '../../../app/assets/javascripts/functions';
 
 class ProfileShow extends React.Component {
     
     constructor(props) {
         super(props);
+        this.spliceEmail = this.spliceEmail.bind(this);
+    }
+
+    spliceEmail(email) {
+        let result = "";
+        let letter = "";
+        let count = 0;
+        for (let i = 0; i < email.length; i++) {
+            letter = email[i];
+            if (letter === "@") {
+                return result;
+            }
+            else if (count === 28) {
+                result += "...";
+                return result;
+            }
+            else {
+                result += letter;
+                count++;
+            }
+        }
     }
 
     render() {
@@ -20,7 +40,7 @@ class ProfileShow extends React.Component {
                     <div className="full-content-container">
                         <div className="email-follow-container">
                             <h1 className="short-email">
-                                {spliceEmail(this.props.currentUser.email)}
+                                {this.spliceEmail(this.props.currentUser.email)}
                             </h1>
                             <h1 className="followers-count">
                                 0 Followers
