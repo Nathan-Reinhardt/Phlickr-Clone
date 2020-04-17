@@ -33,3 +33,4 @@ In the future I would like to add on:
  * Ability to search for a photo.
  * Have a view count and favorite number for photos.
  * Abiltiy to update a photos information by the owner of the photo.
+ * Dynamic pages of knowing whether or not you have content on the link.
