@@ -18,6 +18,7 @@
  * Users can only interact with photos when logged in.
  * Photos are displayed all together or when clicked show the individual photo.
  * When a photo is individually picked, it shows the title and description of the photo.
+ * Profile Page for every user to see where their information is displayed.
  
 ### Screenshots
 
