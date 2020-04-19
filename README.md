@@ -28,7 +28,7 @@
 
 ### Possible Future Features
 
-In the future I would like to add on:
+In the future I would like to add on these features:
 
  * Fully impliment image uploading of photos for a user with deleting photos owned only by the logged in user.
  * Ability to search for a photo.
