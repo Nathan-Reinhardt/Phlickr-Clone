@@ -6,7 +6,7 @@
 
 * Javascript
 * HTML
-* SCSS
+* SCSS/CSS3
 * React/Redux
 * Webpack
 * Ruby on Rails
