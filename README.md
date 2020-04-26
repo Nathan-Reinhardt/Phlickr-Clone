@@ -26,7 +26,7 @@
 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/91ADC8FA-00B4-41A0-AC0E-2A7A1855B8ED_1_105_c.jpeg"/>
 
-### Possible Future Features
+### Future Features
 
 In the future I would like to add on these features:
 
