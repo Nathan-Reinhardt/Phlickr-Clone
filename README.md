@@ -1,6 +1,6 @@
 # Phlickr
 
-[Phlickr](https://phlickr-clone.herokuapp.com/#/) is a pixel perfect replica of [Flickr](https://www.flickr.com/). A tribute!
+[Phlickr](https://phlickr-clone.herokuapp.com/#/) is a pixel perfect replica of [Flickr](https://www.flickr.com/). A tribute to the real thing.
 ### Technologies
 
 * Javascript
