@@ -34,4 +34,3 @@ In the future I would like to add on these features:
  * Abiltiy to update a photos information by the owner of the photo.
  * Dynamic pages of knowing whether or not you have content on the link.
  * External Pages that show multi linking functionality.
- * And more...
