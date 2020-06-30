@@ -36,7 +36,7 @@ const LogoDetailBar = (props) => {
             </div>
         </div>
     ) : (
-        <label className="detail-title">phlickr</label>
+        <label className="detail-title-2">phlickr</label>
     );
     
     return (

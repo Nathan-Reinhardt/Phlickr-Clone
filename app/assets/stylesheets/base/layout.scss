@@ -3,7 +3,7 @@
 .SLIDE-BG, .logged-back-ground, .back-ground-session, 
 .back-ground-photos, .profile-page-container {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -49,11 +49,11 @@
 }
 
 .profile-page-container {
-	height: 42.3vh;
+	height: 80%;
 }
 
 .below-page-container, .stats-page-container {
-	height: 75vh;
+	height: 75%;
 }
 
 .stats-page-container {
@@ -62,7 +62,7 @@
 
 .back-ground-session {
 	background-image: image-url('shawnang.jpg');
-	height: 115vh;
+	height: 115%;
 }
 
 .back-ground-photos {
