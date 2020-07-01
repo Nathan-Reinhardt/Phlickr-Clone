@@ -12,6 +12,7 @@ import GalleriesContainer from "./profile/profile_tabs/galleries_container";
 import FavesContainer from "./profile/profile_tabs/faves_tab_container";
 import AlbumsContainer from "./profile/profile_tabs/albums_container";
 import AboutTabContainer from "./profile/profile_tabs/about_tab_container";
+import PhlickrProContainer from "./phlickrpro/phlickrpro_container";
 
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 
@@ -29,6 +30,7 @@ const App = () => (
       <ProtectedRoute exact={true} path="/photos/:userId/stats" component={StatsTabContainer} />
       <ProtectedRoute path="/cameraroll" component={CameraUploadContainer} />
       <ProtectedRoute path="/groups" component={GroupsContainer} />
+      <Route path="/account/upgrade/pro" component={PhlickrProContainer} />
     </Switch>
   </div>
 );

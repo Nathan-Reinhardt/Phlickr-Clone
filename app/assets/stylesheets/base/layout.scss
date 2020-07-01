@@ -44,6 +44,8 @@
 	}
 }
 
+// where are the background css is taken care of per page
+
 .logged-back-ground, .profile-page-container, .below-page-container {
 	background-color: rgb(243, 245, 246);
 }
@@ -54,7 +56,7 @@
 
 .below-page-container, .stats-page-container {
 	height: 100%;
-	padding-bottom: 12%;
+	padding-bottom: 25%;
 }
 
 .stats-page-container {
@@ -68,4 +70,8 @@
 
 .back-ground-photos {
 	background-image: image-url('treeplace.jpg');
+}
+
+.phlickr-pro-background {
+	
 }

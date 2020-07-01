@@ -42,7 +42,7 @@ class StatsTab extends React.Component {
                             </h3>
                         </div>
                         <div className="learn-more-pro-cont">
-                            <Link className="learn-more-pro-link">
+                            <Link className="learn-more-pro-link" to="/account/upgarde/pro">
                                 Learn more about Pro
                             </Link>
                         </div>
