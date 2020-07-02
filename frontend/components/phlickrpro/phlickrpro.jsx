@@ -14,7 +14,7 @@ class PhlickrPro extends React.Component {
             <div className="phlickrpro-page-container">
                 <PhlickrProBarContainer />
                 <div className="phlickr-pro-background">
-                    <h1>hi</h1>
+                    <Link>This is a link</Link>
                 </div>
             </div>
         );
