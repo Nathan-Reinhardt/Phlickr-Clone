@@ -15,17 +15,20 @@ class PhlickrPro extends React.Component {
                 <PhlickrProBarContainer />
                 <div className="phlickr-pro-background">
                     <div className="phlickr-pro-content-cont">
-                        <div>
-                            <h1></h1>
+                        <div className="pro-title-cont">
+                            <h1 className="pro-title-1">phlickr</h1>
+                            <h1 className="pro-title-2">pro</h1>
                         </div>
-                        <div>
-                            <h3></h3>
+                        <div className="pro-info-cont-1">
+                            <h3 className="pro-info-1">
+                                Advanced stats, ad-free browsing, automatic photo
+                            </h3>
                         </div>
-                        <div>
-                            <h3></h3>
+                        <div className="pro-info-cont-2">
+                            <h3 className="pro-info-2">uploads, and more.</h3>
                         </div>
-                        <div>
-                            <Link>This is a link</Link>
+                        <div className="pro-get-started-link-cont">
+                            <Link className="get-started-link">Get started</Link>
                         </div>
                     </div>
                 </div>
