@@ -21,13 +21,19 @@
 
 .logged-detail, .prints-container, .greet-logout, 
 .leftside-logo-container, .rightside-logo-container,
-.cloud-icon-container, .notification-bell-container {
+.cloud-icon-container, .notification-bell-container, 
+.second-half-logged-nav {
     display: flex;
 }
 
 .logged-detail {
     justify-content: space-between;
     width: 84vw;
+}
+
+.second-half-logged-nav {
+    justify-content: space-between;
+    width: 36.9%;
 }
 
 // logged detail display
@@ -75,7 +81,7 @@
 .cloud-icon {
     background-image: image-url('clouduploadicon.jpeg');
     width: 2.9vw;
-    margin-left: -7.1vw;
+    margin-left: -7vw;
 }
 
 .notification-bell {

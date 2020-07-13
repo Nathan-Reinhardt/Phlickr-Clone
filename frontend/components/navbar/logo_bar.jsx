@@ -18,19 +18,21 @@ const LogoDetailBar = (props) => {
                 </div>
                 <Link className="get-pro-logged" to="/account/upgrade/pro">Get Pro</Link>
             </div>
-            <div className="rightside-logo-container">
+            <div className="second-half-logged-nav">
                 <div className="logged-search-box-container">
                     <h1 className="logged-mag-search">&#128269;</h1>
                     <input className="logged-search-text-box" type="text" placeholder="Photos, people, or groups"/>
                 </div>
-                <div className="cloud-icon-container">
-                    <h1 className="cloud-icon">.</h1>
-                </div>
-                <div className="notification-bell-container">
-                    <h1 className="notification-bell">.</h1>
-                </div>
-                <div className="greet-logout">
-                    <button className="signbtn" onClick={() => props.logout()}>Log Out</button>
+                <div className="rightside-logo-container">
+                    <div className="cloud-icon-container">
+                        <h1 className="cloud-icon">.</h1>
+                    </div>
+                    <div className="notification-bell-container">
+                        <h1 className="notification-bell">.</h1>
+                    </div>
+                    <div className="greet-logout">
+                        <button className="signbtn" onClick={() => props.logout()}>Log Out</button>
+                    </div>
                 </div>
             </div>
         </div>
