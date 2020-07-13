@@ -16,7 +16,7 @@ const LogoDetailBar = (props) => {
                 <div className="prints-container">
                     <h1 className="prints-logged">Prints</h1>
                 </div>
-                <h1 className="get-pro-logged">Get Pro</h1>
+                <Link className="get-pro-logged" to="/account/upgrade/pro">Get Pro</Link>
             </div>
             <div className="rightside-logo-container">
                 <div className="logged-search-box-container">

@@ -15,9 +15,6 @@ class Splash extends React.Component {
         }
 
         this.demoUser = this.demoUser.bind(this);
-        this.activityButton = this.activityButton.bind(this);
-        this.peopleButton = this.peopleButton.bind(this);
-        this.groupsButton = this.groupsButton.bind(this);
     }
 
     demoUser(e) {
@@ -30,64 +27,10 @@ class Splash extends React.Component {
             .then( () => this.props.history.push[`/`]);
     }
 
-    activityButton() {
-        document.getElementById("all-activity-but").classList.remove("allActivityGray");
-        document.getElementById("people-but").classList.remove("peopleBlue");
-        document.getElementById("groups-but").classList.remove("groupsBlue");
-
-        document.getElementById("all-activity-but").classList.add("allActivityBlue");
-        document.getElementById("people-but").classList.add("peopleGray");
-        document.getElementById("groups-but").classList.add("groupsGray");
-    }
-
-    peopleButton() {
-        document.getElementById("all-activity-but").classList.remove("allActivityBlue");
-        document.getElementById("people-but").classList.remove("peopleGray");
-        document.getElementById("groups-but").classList.remove("groupsBlue");
-
-        document.getElementById("all-activity-but").classList.add("allActivityGray");
-        document.getElementById("people-but").classList.add("peopleBlue");
-        document.getElementById("groups-but").classList.add("groupsGray");
-    }
-
-    groupsButton() {
-        document.getElementById("all-activity-but").classList.remove("allActivityBlue");
-        document.getElementById("people-but").classList.remove("peopleBlue");
-        document.getElementById("groups-but").classList.remove("groupsGray");
-
-        document.getElementById("all-activity-but").classList.add("allActivityGray");
-        document.getElementById("people-but").classList.add("peopleGray");
-        document.getElementById("groups-but").classList.add("groupsBlue");
-    }
-
     render() {
         const display = this.props.currentUser ? (
             <div className="logged-back-ground">
                 <LogoDetailBarContainer />
-                <div className="root-tab-content">
-                    <div className="logged-tabs-container">
-                        <div className="tab-but-container">
-                            <button id="all-activity-but" className="allActivityBlue" onClick={(e) => {
-                                e.preventDefault();
-                                this.activityButton();
-                            }}>
-                                All Activity
-                            </button>
-                            <button id="people-but" className="peopleGray" onClick={(e) => {
-                                e.preventDefault();
-                                this.peopleButton();
-                            }}>
-                                People
-                            </button>
-                            <button id="groups-but" className="groupsGray" onClick={(e) => {
-                                e.preventDefault();
-                                this.groupsButton();
-                            }}>
-                                Groups
-                            </button>
-                        </div>
-                    </div>
-                </div>
                 <div className="wholeadvert-container">
                     <div>
                         <a href="https://skylum.com/l/l4-flickr-sky-try?utm_source=flickr&utm_medium=partner&utm_campaign=Luminar_4_flickr_sky_us&utm_term=970x250" target="_blank">
@@ -96,9 +39,9 @@ class Splash extends React.Component {
                     </div>
                 </div>
                 <div className="phlickr-pro-container">
-                    <h1 className="phlickr-pro-message">
+                    <Link className="phlickr-pro-message" to="/account/upgrade/pro">
                         Upgrade to Phlickr Pro to hide these ads
-                    </h1>
+                    </Link>
                 </div>
             </div>
         ) : (

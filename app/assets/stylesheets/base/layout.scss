@@ -46,7 +46,11 @@
 
 // where are the background css is taken care of per page
 
-.logged-back-ground, .profile-page-container, .below-page-container {
+.logged-back-ground {
+	background-color: rgb(32, 33, 35);
+}
+
+.profile-page-container, .below-page-container {
 	background-color: rgb(243, 245, 246);
 }
 

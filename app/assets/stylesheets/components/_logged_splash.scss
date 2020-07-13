@@ -12,7 +12,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 19.5px;
+    padding-bottom: 19.5px;
 }
 
 .logged-tabs-container {
@@ -26,47 +27,13 @@
     margin-left: 10vw;
 }
 
-.allActivityGray, .peopleGray, .groupsGray,
-.allActivityBlue, .peopleBlue, .groupsBlue {
-    height: 44px;
-    width: 90px;
-    font-size: 15px;
-    transition: 0.2s;
-    margin-top: 3px;
-}
-
-.allActivityGray, .peopleGray, .groupsGray {
-    color: rgb(84, 84, 84);
-    border-bottom: 3px solid transparent;
-}
-
-.allActivityBlue, .peopleBlue, .groupsBlue {
-    color: black;
-    border-bottom: 3px solid rgb(50, 145, 220);
-}
-
-.allActivityGray, .allActivityBlue {
-    width: 113px;
-    font-size: 15.5px;
-}
-
-.peopleGray, .groupsGray, .peopleBlue, .groupsBlue {
-    margin-left: 10px;
-}
-
-.allActivityGray:hover, .peopleGray:hover, .groupsGray:hover {
-    cursor: pointer;
-    color: black;
-    border-bottom: 3px solid rgb(50, 145, 220);
-}
-
 // adverstisement on page //
 
 .wholeadvert-container {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 5.6vh;
+    margin-top: 2%;
 }
 
 .ad-vert {
@@ -77,8 +44,9 @@
 }
 
 .phlickr-pro-message {
-    font-size: 13.3px;
-    color: rgb(143, 143, 143);
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
 }
 
 // hover effects
