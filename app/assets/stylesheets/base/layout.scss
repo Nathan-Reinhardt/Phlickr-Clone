@@ -1,7 +1,7 @@
 // Background Properties
 
 .SLIDE-BG, .logged-back-ground, .back-ground-session, 
-.back-ground-photos, .profile-page-container {
+.back-ground-photos, .profile-page-container, .phlickr-pro-background {
 	width: 100%;
 	height: 100%;
 	background-position: center center;
@@ -70,8 +70,4 @@
 
 .back-ground-photos {
 	background-image: image-url('treeplace.jpg');
-}
-
-.phlickr-pro-background {
-	
 }

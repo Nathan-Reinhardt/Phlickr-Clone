@@ -1,3 +1,16 @@
 .phlickrpro-page-container {
     height: 95%;
 }
+
+.phlickr-pro-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-image: image-url('flickrproimage.jpg');
+	height: 90%;
+}
+
+.phlickr-pro-content-cont {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
