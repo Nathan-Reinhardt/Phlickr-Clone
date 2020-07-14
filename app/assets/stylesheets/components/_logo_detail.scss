@@ -33,7 +33,13 @@
 
 .second-half-logged-nav {
     justify-content: space-between;
-    width: 36.9%;
+    width: 35.8%;
+}
+
+#secondHalfNav {
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
 }
 
 // logged detail display

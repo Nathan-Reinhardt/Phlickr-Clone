@@ -8,12 +8,6 @@ class Splash extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            activity: "all-activity-but",
-            people: "people-but",
-            groups: "groups-but",
-        }
-
         this.demoUser = this.demoUser.bind(this);
     }
 

@@ -44,8 +44,13 @@
 }
 
 .logged-search-box-container {
-    width: 50%;
-    margin-left: 2.9%;
+    width: 51.4%;
+}
+
+#loggedTextBoxContainer {
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
 }
 
 .search-text-box, .logged-search-text-box {
@@ -102,6 +107,8 @@
 }
 
 .logged-mag-search {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     opacity: 0.8;
     width: 43px;
 }
@@ -109,9 +116,6 @@
 .logged-search-text-box:focus {
     opacity: 1;
     outline: none;
-    .second-half-logged-nav {
-        width: 50%;
-    }
 }
 
 .mag-search:hover, .logged-mag-search:hover {
