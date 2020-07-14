@@ -9,8 +9,9 @@ class LogoDetailBar extends React.Component {
 
     render() {
         function textBoxFocus() {
-            document.getElementById("loggedTextBoxContainer").style.width = "60%";
-            document.getElementById("secondHalfNav").style.width = "40%";
+            document.getElementById("loggedTextBoxContainer").style.width = "63.25%";
+            document.getElementById("secondHalfNav").style.width = "47.3%";
+            document.getElementById("loggedMagSearch").style.opacity = "1";
         }
 
         const display = this.props.currentUser ? (
@@ -30,7 +31,7 @@ class LogoDetailBar extends React.Component {
                 </div>
                 <div id="secondHalfNav" className="second-half-logged-nav">
                     <div id="loggedTextBoxContainer" className="logged-search-box-container">
-                        <h1 className="logged-mag-search">&#128269;</h1>
+                        <h1 id="loggedMagSearch" className="logged-mag-search">&#128269;</h1>
                         <input className="logged-search-text-box" onFocus={textBoxFocus} type="text" placeholder="Photos, people, or groups"/>
                     </div>
                     <div className="rightside-logo-container">

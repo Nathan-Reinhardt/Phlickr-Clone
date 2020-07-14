@@ -44,6 +44,21 @@
 	}
 }
 
+// id transtition properties
+
+#loggedTextBoxContainer, #secondHalfNav, #loggedMagSearch {
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+}
+
+#loggedTextBoxContainer, #secondHalfNav {
+	-webkit-transition-property: width;
+}
+
+#loggedMagSearch {
+	-webkit-transition-property: opacity;
+}
+
 // where are the background css is taken care of per page
 
 .logged-back-ground {
