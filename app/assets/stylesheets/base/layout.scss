@@ -46,16 +46,23 @@
 
 // id transtition properties
 
+#loggedTextBoxContainer, #secondHalfNav, #loggedMagSearch, #magSearch {
+	-webkit-transition-timing-function: ease;
+}
+
 #loggedTextBoxContainer, #secondHalfNav, #loggedMagSearch {
-    -webkit-transition-duration: 0.4s;
-    -webkit-transition-timing-function: ease;
+	-webkit-transition-duration: 0.4s;
+}
+
+#magSearch {
+	-webkit-transition-duration: 0.5s;
 }
 
 #loggedTextBoxContainer, #secondHalfNav {
 	-webkit-transition-property: width;
 }
 
-#loggedMagSearch {
+#loggedMagSearch, #magSearch {
 	-webkit-transition-property: opacity;
 }
 
