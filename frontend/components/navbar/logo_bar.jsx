@@ -14,6 +14,12 @@ class LogoDetailBar extends React.Component {
             document.getElementById("loggedMagSearch").style.opacity = "1";
         }
 
+        function textBoxUnFocus() {
+            document.getElementById("loggedTextBoxContainer").style.width = "51.4%";
+            document.getElementById("secondHalfNav").style.width = "35.8%";
+            document.getElementById("loggedMagSearch").style.opacity = "0.8";
+        }
+
         const display = this.props.currentUser ? (
             <div className="logged-detail">
                 <div className="leftside-logo-container">
@@ -32,7 +38,7 @@ class LogoDetailBar extends React.Component {
                 <div id="secondHalfNav" className="second-half-logged-nav">
                     <div id="loggedTextBoxContainer" className="logged-search-box-container">
                         <h1 id="loggedMagSearch" className="logged-mag-search">&#128269;</h1>
-                        <input className="logged-search-text-box" onFocus={textBoxFocus} type="text" placeholder="Photos, people, or groups"/>
+                        <input className="logged-search-text-box" onFocus={textBoxFocus} onBlur={textBoxUnFocus} type="text" placeholder="Photos, people, or groups"/>
                     </div>
                     <div className="rightside-logo-container">
                         <div className="cloud-icon-container">
