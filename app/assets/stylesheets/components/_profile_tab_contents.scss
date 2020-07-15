@@ -4,7 +4,7 @@
 
 .photostream-top-bar, .photostream-dropdown-cont, .ps-date-uploaded-cont,
 .ps-public-view-cont, .photostream-content-cont, .no-public-photos-cont,
-.ps-info-cont, .ps-info-two-cont, .camera-upload-link-cont {
+.ps-info-cont, .ps-info-two-cont, .camera-upload-link-cont, .about-yourself-cont {
     display: flex;
 }
 
@@ -212,7 +212,7 @@
 .gallery-info-cont-3, .gallery-but-cont, .faves-main-cont,
 .faves-info-1-cont, .faves-info-2-cont, .start-faves-but-cont,
 .album-main-cont, .album-info-1-cont, .album-info-2-cont, 
-.album-info-3-cont, .album-crb-cont {
+.album-info-3-cont, .album-crb-cont, .description-cont {
     display: flex;
     justify-content: center;
 }
@@ -349,4 +349,21 @@
     padding-left: 20px;
     width: 140px;
     height: 15px;
+}
+
+// about tab css // about containers //
+
+.description-cont {
+    margin-top: 19px;
+}
+
+.about-yourself-cont {
+    justify-content: space-between;
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid rgb(220, 220, 220);
+    padding-top: 20px;
 }
