@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfileShowContainer from '../profile_show_container';
-import DescriptionAboutContainer from './abtab_desc_container';
+import DescriptionAboutContainer from './about_tab/abtab_desc_container';
 import { Link } from 'react-router-dom';
 
 class AboutTab extends React.Component {

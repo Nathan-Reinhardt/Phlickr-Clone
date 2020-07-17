@@ -1,10 +1,9 @@
 import { connect } from "react-redux";
-import DescriptionAbout from "./abtab_desc";
-import { logout } from '../../../actions/session_actions';
+import FormAbout from "./abtab_form";
+import { logout } from '../../../../actions/session_actions';
 
 const mapStateToProps = (state) => ({
-    currentUser: state.entities.users[state.session.id],
-    descBool: false
+    currentUser: state.entities.users[state.session.id]
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -14,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(DescriptionAbout);
+)(FormAbout);
