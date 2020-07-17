@@ -8,9 +8,9 @@ class FormAbout extends React.Component {
 
     render() {
         const display = this.props.bool ? (
-            <div>
+            <form>
                 
-            </div>
+            </form>
         ) : (
             <div>
                 <h3 className="placeholderdesc">write a little about yourself</h3>

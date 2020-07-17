@@ -8,6 +8,13 @@ class DescriptionAbout extends React.Component {
         this.state = {
             boolean: this.props.descBool
         }
+
+        this.editDescription = this.editDescription.bind(this);
+    }
+
+    editDescription(e) {
+        e.preventDefault();
+        this.setState( { boolean: true })
     }
 
     render() {
@@ -16,8 +23,8 @@ class DescriptionAbout extends React.Component {
                 <div className="desctext-cont">
                     <FormAboutContainer bool={this.state.boolean}/>
                 </div>
-                <div id="descPencilCont" className="descpencil-cont">
-                    <button className="pencil-icon">.</button>
+                <div className="descpencil-cont">
+                    <button id="descPencilCont" className="pencil-icon" onClick={this.editDescription}>.</button>
                 </div>
             </div>
         ) : (
