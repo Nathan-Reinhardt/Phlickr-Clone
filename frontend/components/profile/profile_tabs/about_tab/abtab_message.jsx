@@ -1,6 +1,6 @@
 import React from 'react';
 
-class FormAbout extends React.Component {
+class MessageAbout extends React.Component {
     
     constructor(props) {
         super(props);
@@ -8,9 +8,9 @@ class FormAbout extends React.Component {
 
     render() {
         const display = this.props.bool ? (
-            <form>
-                
-            </form>
+            <div>
+                <h3>hi this is the users message</h3>
+            </div>
         ) : (
             <div>
                 <h3 className="placeholderdesc">write a little about yourself</h3>
@@ -25,4 +25,4 @@ class FormAbout extends React.Component {
     }
 }
 
-export default FormAbout;
+export default MessageAbout;

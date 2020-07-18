@@ -1,5 +1,5 @@
 import React from 'react';
-import FormAboutContainer from './abtab_form_container';
+import MessageAboutContainer from './abtab_message_container';
 
 class DescriptionAbout extends React.Component {
     
@@ -12,23 +12,24 @@ class DescriptionAbout extends React.Component {
         this.editDescription = this.editDescription.bind(this);
     }
 
-    editDescription(e) {
-        e.preventDefault();
-        this.setState( { boolean: true })
+    editDescription() {
+        this.setState({ boolean: true })
     }
 
     render() {
-        const display = this.props.currentUser ? (
+        const display = this.state.boolean ? (
+            <div className="about-yourself-cont">
+                
+            </div>
+        ) : (
             <div className="about-yourself-cont">
                 <div className="desctext-cont">
-                    <FormAboutContainer bool={this.state.boolean}/>
+                    <MessageAboutContainer bool={this.state.boolean}/>
                 </div>
                 <div className="descpencil-cont">
                     <button id="descPencilCont" className="pencil-icon" onClick={this.editDescription}>.</button>
                 </div>
             </div>
-        ) : (
-            null
         );
 
         return (
