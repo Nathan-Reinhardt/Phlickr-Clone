@@ -4,7 +4,8 @@
 
 .photostream-top-bar, .photostream-dropdown-cont, .ps-date-uploaded-cont,
 .ps-public-view-cont, .photostream-content-cont, .no-public-photos-cont,
-.ps-info-cont, .ps-info-two-cont, .camera-upload-link-cont, .about-yourself-cont {
+.ps-info-cont, .ps-info-two-cont, .camera-upload-link-cont, .about-yourself-cont,
+.textarea-desc-cont {
     display: flex;
 }
 
@@ -358,15 +359,27 @@
     margin-top: 19px;
 }
 
-.about-yourself-cont {
+.about-yourself-cont, .textarea-desc-cont {
     justify-content: space-between;
     width: 80%;
-    height: 100px;
+    height: 90px;
     background-color: white;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border: 1px solid rgb(220, 220, 220);
     padding-top: 20px;
+}
+
+.dtbigger-cont {
+    width: 100%;
+    margin-left: 9.9%;
+}
+
+.textarea-desc-cont {
+    width: 88.8%;
+    justify-content: center;
+    height: 277px;
+    padding-top: 40px;
 }
 
 // about tab content //
@@ -376,4 +389,20 @@
     color: transparent;
     width: 24px;
     height: 24px;
+}
+
+.desctextarea {
+    width: 78.2%;
+    border: 1px solid rgb(161, 167, 170);
+    border-radius: 3px;
+    height: 186px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 15px;
+}
+
+.desctextarea:focus {
+    border: 1px solid rgb(47, 141, 223);
 }

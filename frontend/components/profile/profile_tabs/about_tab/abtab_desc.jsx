@@ -18,8 +18,10 @@ class DescriptionAbout extends React.Component {
 
     render() {
         const display = this.state.boolean ? (
-            <div className="about-yourself-cont">
-                
+            <div className="dtbigger-cont">
+                <div className="textarea-desc-cont">
+                    <textarea className="desctextarea" cols="30" rows="10"></textarea>
+                </div>
             </div>
         ) : (
             <div className="about-yourself-cont">
