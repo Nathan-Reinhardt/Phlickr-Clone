@@ -10,10 +10,15 @@ class DescriptionAbout extends React.Component {
         }
 
         this.editDescription = this.editDescription.bind(this);
+        this.closeEdit = this.closeEdit.bind(this);
     }
 
     editDescription() {
         this.setState({ boolean: true })
+    }
+
+    closeEdit() {
+        this.setState({ boolean: false })
     }
 
     render() {
@@ -22,6 +27,10 @@ class DescriptionAbout extends React.Component {
                 <div className="textarea-desc-cont">
                     <textarea className="desctextarea" cols="30" rows="10"></textarea>
                 </div>
+                <div className="dt-buttons-cont">
+                    <button className="dt-save-but">Save</button>
+                    <button className="dt-cancel-but" onClick={this.closeEdit}>Cancel</button>
+                </div>
             </div>
         ) : (
             <div className="about-yourself-cont">
@@ -29,7 +38,7 @@ class DescriptionAbout extends React.Component {
                     <MessageAboutContainer bool={this.state.boolean}/>
                 </div>
                 <div className="descpencil-cont">
-                    <button id="descPencilCont" className="pencil-icon" onClick={this.editDescription}>.</button>
+                    <button className="pencil-icon" onClick={this.editDescription}>.</button>
                 </div>
             </div>
         );
