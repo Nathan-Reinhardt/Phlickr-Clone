@@ -13,7 +13,7 @@ class MessageAbout extends React.Component {
             </div>
         ) : (
             <div>
-                <h3 className="placeholderdesc">write a little about yourself</h3>
+                <h3 className="placeholder-desc">Write a little about yourself</h3>
             </div>
         );
 

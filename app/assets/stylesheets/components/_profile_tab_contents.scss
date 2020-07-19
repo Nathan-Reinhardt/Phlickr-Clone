@@ -356,6 +356,15 @@
 
 // about tab css // about containers //
 
+.desctext-cont {
+    margin-left: 10%;
+}
+
+.descpencil-cont {
+    margin-right: 3.5%;
+    margin-top: 1.51%;
+}
+
 .description-cont {
     margin-top: 19px;
 }
@@ -363,12 +372,12 @@
 .about-yourself-cont, .textarea-desc-cont {
     justify-content: space-between;
     width: 80%;
-    height: 90px;
+    height: 88px;
     background-color: white;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border: 1px solid rgb(220, 220, 220);
-    padding-top: 20px;
+    padding-top: 22px;
 }
 
 .dtbigger-cont {
@@ -390,6 +399,13 @@
 }
 
 // about tab content //
+
+.placeholder-desc {
+    color: rgb(33, 34, 36);
+    font-size: 15.5px;
+    font-style: italic;
+    font-weight: normal;
+}
 
 .pencil-icon {
     background-image: image-url('pencilediticon.jpeg');
