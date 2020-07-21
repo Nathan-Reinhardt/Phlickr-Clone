@@ -10,8 +10,8 @@ require 'open-uri'
 User.destroy_all
 Photo.destroy_all
 
-User.create(id: 1, first_name: "Nathan", last_name: "Reinhardt", age: 22, email: "nrein@gmail.com", password: "password")
-User.create(id: 2, first_name: "Lawrence", last_name: "Fields", age: 18, email: "demo@demo.com", password: "password")
+User.create(id: 1, first_name: "Nathan", last_name: "Reinhardt", age: 22, email: "nrein@gmail.com", password: "password", description: "")
+User.create(id: 2, first_name: "Lawrence", last_name: "Fields", age: 18, email: "demo@demo.com", password: "password", description: "")
 
 photo1 = Photo.create(id: 1, title: "City Lights", user_id: 1, views: 0, faves_num: 0, description: "Busy streets in Chicago")
 file1 = open('https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/city1.jpg')

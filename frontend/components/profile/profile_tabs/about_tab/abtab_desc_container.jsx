@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import DescriptionAbout from "./abtab_desc";
-import { logout } from '../../../../actions/session_actions';
+import { logout, updateDescript } from '../../../../actions/session_actions';
 
 const mapStateToProps = (state) => ({
     currentUser: state.entities.users[state.session.id],
@@ -8,6 +8,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
+    updateDescription: description => dispatch(updateDescript(description)),
     logout: () => dispatch(logout())
 });
 

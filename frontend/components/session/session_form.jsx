@@ -11,6 +11,7 @@ class SessionForm extends React.Component {
             age: "",
             first_name: "",
             last_name: "",
+            description: "",
             error1: "",
             error2: "",
             error3: "",

@@ -20,3 +20,10 @@ export const logoutSession = () => (
         method: `DELETE`
     })
 );
+
+export const updateUser = () => (
+    $.ajax({
+        url: `/api/users`,
+        method: `PATCH`
+    })
+);
