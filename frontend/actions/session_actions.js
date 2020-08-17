@@ -31,9 +31,10 @@ export const logoutCurrentUser = () => (
     }
 );
 
-export const updateCurrentUser = () => (
+export const updateCurrentUser = user => (
     {
-        type: UPDATE_CURRENT_USER
+        type: UPDATE_CURRENT_USER,
+        user
     }
 );
 
@@ -53,6 +54,6 @@ export const signup = formUser => dispatch => createUser(formUser)
     .then(user => dispatch(receiveCurrentUser(user)))
     .fail((error) => dispatch(receiveSessionErrors(error)));
 
-export const updateDescript = () => dispatch => updateUser()
-    .then(() => dispatch(receiveCurrentUser()))
+export const updateDescript = formUser => dispatch => updateUser(formUser)
+    .then((user) => dispatch(updateCurrentUser(user)))
     .fail((error) => dispatch(receiveSessionErrors(error)));

@@ -6,6 +6,11 @@ class DescriptionAbout extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            email: this.props.currentUser.email,
+            age: this.props.currentUser.age,
+            first_name: this.props.currentUser.first_name,
+            last_name: this.props.currentUser.last_name,
+            description: this.props.currentUser.description,
             boolean: this.props.descBool
         }
 
@@ -24,9 +29,11 @@ class DescriptionAbout extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        const description = document.getElementById("descTextArea").value
-        this.props.updateDescription(description)
+        this.setState({ description: document.getElementById("descTextArea").value })
+        this.props.currentUser.description = this.state.description;
+        this.props.updateDescription(this.props.currentUser)
             .then( () => this.props.history.push[`/`])
+            .fail( () => console.log("I failed"));
     }
 
     render() {
