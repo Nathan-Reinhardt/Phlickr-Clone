@@ -1,5 +1,6 @@
 import React from 'react';
 import ProfileShowContainer from '../profile_show_container';
+import DescriptionAboutContainer from './about_tab/abtab_desc_container';
 import { Link } from 'react-router-dom';
 
 class AboutTab extends React.Component {
@@ -23,10 +24,8 @@ class AboutTab extends React.Component {
                         <Link className="camera-roll-but" to="/cameraroll">Camera Roll</Link>
                     </div>
                 </div>
-                <div className="">
-                    <div className="">
-                        
-                    </div>
+                <div className="about-tab-container">
+                    <DescriptionAboutContainer />
                 </div>
             </div>
         ) : (

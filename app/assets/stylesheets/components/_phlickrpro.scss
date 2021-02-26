@@ -1,0 +1,76 @@
+// phlickr pro page scss
+
+.phlickrpro-page-container {
+    height: 95%;
+}
+
+.phlickr-pro-background, .pro-title-cont, .pro-info-cont-1,
+.pro-info-cont-2, .pro-get-started-link-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.phlickr-pro-background {
+    background-image: image-url('flickrproimage.jpg');
+	height: 90%;
+}
+
+// containers
+
+.phlickr-pro-content-cont {
+    margin-top: 12.4%;
+    margin-bottom: 12.8%;
+}
+
+.pro-info-cont-1 {
+    padding-top: 25px;
+}
+
+.pro-info-cont-2 {
+    height: 25px;
+}
+
+.pro-get-started-link-cont {
+    padding-top: 37px;
+}
+
+// content
+
+.pro-title-1, .pro-title-2, .pro-info-1, .pro-info-2, .get-started-link {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.pro-title-1, .pro-title-2 {
+    font-size: 50px;
+}
+
+.pro-title-1 {
+    font-weight: bold;
+}
+
+.pro-title-2 {
+    margin-left: 4px;
+}
+
+.pro-info-1, .pro-info-2 {
+    font-size: 29px;
+}
+
+.get-started-link {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(49, 144, 220);
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+    padding-left: 65.41px;
+    padding-right: 65.41px;
+    border-radius: 3px;
+}
+
+.get-started-link:hover {
+    background-color: rgb(45, 148, 233);
+}
