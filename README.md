@@ -1,6 +1,6 @@
 # Phlickr
 
-[Phlickr](https://phlickr-clone.herokuapp.com/#/) is a pixel perfect replica of [Flickr](https://www.flickr.com/). A tribute to the original website.
+[Phlickr](https://phlickr-clone.herokuapp.com/#/) is a pixel perfect replica of [Flickr](https://www.flickr.com/). A tribute to the original webpage.///
 ### Technologies
 
 * Javascript
@@ -24,16 +24,12 @@
 
 <img src="https://phlickr-clone-seed.s3-us-west-1.amazonaws.com/screenshots/91ADC8FA-00B4-41A0-AC0E-2A7A1855B8ED_1_105_c.jpeg"/>
 
-will be adding more soon
-
 ### Future Features
 
 In the future I would like to add on these features:
 
  * Fully impliment image uploading of photos for a user with deleting photos owned only by the logged in user.
- * Ability to search for a photo.
  * Have a view count and favorite number for photos.
  * Abiltiy to update a photos information by the owner of the photo.
  * Dynamic pages of knowing whether or not you have content on the link.
- * External Pages that show multi linking functionality.
- * And more...
+ * External Pages that show multi linking functionality to other pages.
