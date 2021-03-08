@@ -16,6 +16,9 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
+    "cypress": "^6.6.0",
+    "mocha": "^8.3.1",
+    "mochawesome": "^6.2.2",
     "redux-logger": "^3.0.6"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",

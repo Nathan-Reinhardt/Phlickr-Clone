@@ -30,15 +30,15 @@ class DescriptionAbout extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.setState({ description: document.getElementById("descTextArea").value })
-        this.props.currentUser.description = this.state.description;
-        this.props.updateDescription(this.props.currentUser)
+        const user = Object.assign({}, this.state);
+        this.props.updateDescription(user)
             .then( () => this.props.history.push[`/`])
             .fail( () => console.log("I failed"));
     }
 
     render() {
         const display = this.state.boolean ? (
-            <div className="dtbigger-cont">
+            <form className="dtbigger-cont">
                 <div className="textarea-desc-cont">
                     <textarea id="descTextArea" className="desctextarea" cols="30" rows="10"></textarea>
                 </div>
@@ -46,7 +46,7 @@ class DescriptionAbout extends React.Component {
                     <button className="dt-save-but" onClick={this.handleSubmit}>Save</button>
                     <button className="dt-cancel-but" onClick={this.closeEdit}>Cancel</button>
                 </div>
-            </div>
+            </form>
         ) : (
             <div className="about-yourself-cont">
                 <div className="desctext-cont">
