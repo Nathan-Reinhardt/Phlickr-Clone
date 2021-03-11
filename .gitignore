@@ -5,3 +5,4 @@ tmp
 /log/development.log
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/cypress/report
