@@ -32,7 +32,7 @@ describe('Phlickr Test',function(){
         cy.get('[data-testid=loginbtn]').click();
         cy.get('input[placeholder="Email address"]').type(email);
         cy.get('input[placeholder="Password"]').type(password);
-        cy.get('button').contains('Log in').click();
+        cy.get('button').contains('Sign in').click();
         cy.contains('Log Out').should('exist');
     });
 
@@ -40,6 +40,7 @@ describe('Phlickr Test',function(){
     it('Demo User Test',function(){
         cy.visit('https://phlickr-clone.herokuapp.com/');
         cy.get('[data-testid=splashdemobtn]').click();
+        cy.contains('Log Out').should('exist');
         cy.get('[data-testid=user-profile-link]').click();
         cy.contains('Photostream').should('exist');
     });
