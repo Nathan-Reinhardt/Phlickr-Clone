@@ -11,7 +11,7 @@ const GreetingContainer = (props) => {
     ) : (
         <div className="redirect-userlog">
             <div className="relog">
-                <Link className="logbtn" to="/login">Log In</Link>
+                <Link className="logbtn" data-testid="loginbtn" to="/login">Log In</Link>
             </div>
             <div className="resign">
                 <Link className="signbtn" to="/signup">Sign Up</Link>

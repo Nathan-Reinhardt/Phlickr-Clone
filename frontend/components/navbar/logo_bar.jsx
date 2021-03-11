@@ -26,7 +26,7 @@ class LogoDetailBar extends React.Component {
                     <Link className="detail-title" to="/">
                         phlickr
                     </Link>
-                    <Link className="profile-link" to={`/photos/${this.props.currentUser.id}`}>
+                    <Link className="profile-link" data-testid="user-profile-link" to={`/photos/${this.props.currentUser.id}`}>
                         You
                     </Link>
                     <h1 className="explore-logged">Explore</h1>
@@ -48,7 +48,7 @@ class LogoDetailBar extends React.Component {
                             <h1 className="notification-bell">.</h1>
                         </div>
                         <div className="greet-logout">
-                            <button className="signbtn" onClick={() => this.props.logout()}>Log Out</button>
+                            <button className="signbtn" data-testid="logoutbtn" onClick={() => this.props.logout()}>Log Out</button>
                         </div>
                     </div>
                 </div>

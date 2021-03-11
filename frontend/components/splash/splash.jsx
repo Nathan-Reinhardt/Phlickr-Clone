@@ -60,7 +60,7 @@ class Splash extends React.Component {
                             <Link className="signbtn-splash" to="/signup">Start for free</Link>
                         </div>
                         <div className="demo-container">
-                            <button className="signbtn-splash" onClick={this.demoUser}>Demo</button>
+                            <button className="signbtn-splash" data-testid="splashdemobtn" onClick={this.demoUser}>Demo</button>
                         </div>
                     </div>
                     <h1 className="splash-footer">
