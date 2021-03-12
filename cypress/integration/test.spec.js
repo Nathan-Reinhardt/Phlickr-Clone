@@ -42,6 +42,7 @@ describe('Phlickr Test',function(){
         cy.get('[data-testid=splashdemobtn]').click();
         cy.contains('Log Out').should('exist');
         cy.get('[data-testid=user-profile-link]').click();
+        cy.wait(2000);
         cy.contains('Photostream').should('exist');
     });
 
