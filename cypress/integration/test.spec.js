@@ -1,31 +1,19 @@
+import { randomNames } from '../helper_functions';
+import { signUp } from '../helper_functions';
+
 describe('Phlickr Test',function(){
+    
+    var email = randomNames() + '@gmail.com';
+    var password = randomNames() + '2144';
     
     // test for signing up a new user
     it('Sign Up Test',function(){
-        cy.visit('https://phlickr-clone.herokuapp.com/');
-        cy.get('a').contains('Sign Up').click();
-        cy.get('input[placeholder="First name"]').type(randomNames());
-        cy.get('input[placeholder="Last name"]').type(randomNames());
-        cy.get('input[placeholder="Your age"]').type(numRandom());
-        cy.get('input[placeholder="Email address"]').type(randomNames() + '@gmail.com');
-        cy.get('input[placeholder="Password"]').type(randomNames() + '2144');
-        cy.get('button').contains('Sign up').click();
-        cy.contains('Log Out').should('exist');
+        signUp(email, password);
     });
 
     // test for signing up, logging out, and logging in a new user
     it('Log Out / Log In / Test',function(){
-        var email = randomNames() + '@gmail.com';
-        var password = randomNames() + '2144';
-
-        cy.visit('https://phlickr-clone.herokuapp.com/');
-        cy.get('a').contains('Sign Up').click();
-        cy.get('input[placeholder="First name"]').type(randomNames());
-        cy.get('input[placeholder="Last name"]').type(randomNames());
-        cy.get('input[placeholder="Your age"]').type(numRandom());
-        cy.get('input[placeholder="Email address"]').type(email);
-        cy.get('input[placeholder="Password"]').type(password);
-        cy.get('button').contains('Sign up').click();
+        signUp(email, password);
         cy.wait(2000);
         cy.get('[data-testid=logoutbtn]').click();
         cy.wait(2000);
@@ -45,24 +33,4 @@ describe('Phlickr Test',function(){
         cy.wait(2000);
         cy.contains('Photostream').should('exist');
     });
-
-    // helper function to create a random generated name
-    function randomNames() {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        for (var i = 0; i < 8; i++) {
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-        }
-        return text;
-    };
-
-    // helper function to create a random generated age
-    function numRandom() {
-        var num = 0;
-        num = Math.floor((80 * Math.random())) + 14;
-        if (num > 80) {
-            num = 80;
-        };
-        return num;
-    };
 });
