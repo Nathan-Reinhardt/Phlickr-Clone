@@ -20,6 +20,10 @@ function numRandom() {
 
 // helper function to sign up a new user test
 function signUp(email, password) {
+    if (email == 'random' && password == 'random') {
+        email = randomNames() + '@gmail.com';
+        password = randomNames() + '2144';
+    }
     cy.visit('https://phlickr-clone.herokuapp.com/');
     cy.get('a').contains('Sign Up').click();
     cy.get('input[placeholder="First name"]').type(randomNames());
@@ -31,5 +35,4 @@ function signUp(email, password) {
     cy.contains('Log Out').should('exist');
 }
 
-export function randomNames();
-export function signUp();
+export { randomNames, signUp }

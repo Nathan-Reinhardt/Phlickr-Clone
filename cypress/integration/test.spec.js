@@ -5,10 +5,10 @@ describe('Phlickr Test',function(){
     
     var email = randomNames() + '@gmail.com';
     var password = randomNames() + '2144';
-    
+
     // test for signing up a new user
     it('Sign Up Test',function(){
-        signUp(email, password);
+        signUp('random', 'random');
     });
 
     // test for signing up, logging out, and logging in a new user
